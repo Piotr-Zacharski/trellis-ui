@@ -1,0 +1,33 @@
+---
+title: Tool Call
+description: Status of a function / tool call.
+---
+
+<ComponentPreview name="chat-tool" />
+
+## Import
+
+```tsx
+import { ChatTool } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "name": {
+    "type": "string",
+    "description": "Tool name."
+  },
+  "status": {
+    "type": "'running' | 'success' | 'error'",
+    "description": "State."
+  },
+  "input": {
+    "type": "unknown",
+    "description": "Arguments (shown as JSON)."
+  },
+  "output": {
+    "type": "unknown",
+    "description": "Result (shown as JSON)."
+  }
+}} />

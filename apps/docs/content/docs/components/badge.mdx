@@ -1,0 +1,40 @@
+---
+title: Badge
+description: Count or dot on another element.
+---
+
+<ComponentPreview name="badge" />
+
+## Import
+
+```tsx
+import { Badge } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "content": {
+    "type": "ReactNode",
+    "description": "Count or text; omit for a dot."
+  },
+  "max": {
+    "type": "number",
+    "description": "Show \"99+\" above this.",
+    "default": "99"
+  },
+  "color": {
+    "type": "'primary' | 'danger' | 'warning' | 'neutral'",
+    "description": "Color.",
+    "default": "'danger'"
+  },
+  "placement": {
+    "type": "'top-right' | 'bottom-right' | 'top-left' | 'bottom-left'",
+    "description": "Corner.",
+    "default": "'top-right'"
+  },
+  "isInvisible": {
+    "type": "boolean",
+    "description": "Hide the badge."
+  }
+}} />

@@ -1,0 +1,44 @@
+---
+title: Combobox
+description: A text input with a filterable list of options – a searchable select.
+---
+
+<ComponentPreview name="combo-box" />
+
+## Import
+
+```tsx
+import { ComboBox, ComboBoxItem } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+`FormComboBox` from `@trellis-ui/form` stores the selected item's `id` in the form.
+
+```tsx
+<FormComboBox control={form.control} name="city" label="City" items={cities}>
+  {(item) => <ComboBoxItem id={item.id}>{item.name}</ComboBoxItem>}
+</FormComboBox>
+```
+
+See the full example on the [Date Picker](/docs/components/date-picker#with-react-hook-form) page.
+
+## Props
+
+<TypeTable
+  type={{
+    label: { type: 'ReactNode', description: 'Visible label.' },
+    description: { type: 'ReactNode', description: 'Help text below the field.' },
+    errorMessage: { type: 'string | (v: ValidationResult) => string', description: 'Error shown when the field is invalid.' },
+    placeholder: { type: 'string', description: 'Input placeholder.' },
+    items: { type: 'Iterable<T>', description: 'Items for dynamic collections.' },
+    value: { type: 'Key | null', description: 'Controlled selected key.' },
+    onChange: { type: '(key: Key | null) => void', description: 'Called when the selection changes.' },
+    inputValue: { type: 'string', description: 'Controlled text in the input.' },
+    onInputChange: { type: '(value: string) => void', description: 'Called when the text changes – use it for async filtering.' },
+    allowsCustomValue: { type: 'boolean', description: 'Allow values that do not match an item.' },
+    menuTrigger: { type: "'input' | 'focus' | 'manual'", description: 'What opens the list.', default: "'input'" },
+    isRequired: { type: 'boolean', description: 'Marks the field as required.' },
+    isDisabled: { type: 'boolean', description: 'Disables the field.' },
+  }}
+/>

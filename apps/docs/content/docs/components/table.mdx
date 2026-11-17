@@ -1,0 +1,37 @@
+---
+title: Table
+description: Sortable, selectable data table.
+---
+
+<ComponentPreview name="table" />
+
+## Import
+
+```tsx
+import { Cell, Column, Row, Table, TableBody, TableHeader } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "selectionMode": {
+    "type": "'none' | 'single' | 'multiple'",
+    "description": "Row selection (Table)."
+  },
+  "sortDescriptor": {
+    "type": "SortDescriptor",
+    "description": "Current sort (Table)."
+  },
+  "onSortChange": {
+    "type": "(d: SortDescriptor) => void",
+    "description": "Called when a sortable column is pressed."
+  },
+  "allowsSorting": {
+    "type": "boolean",
+    "description": "Makes a Column sortable."
+  },
+  "isRowHeader": {
+    "type": "boolean",
+    "description": "Marks the column that labels each row."
+  }
+}} />

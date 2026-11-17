@@ -1,0 +1,32 @@
+---
+title: Drawer
+description: Panel sliding in from a screen edge.
+---
+
+<ComponentPreview name="drawer" />
+
+## Import
+
+```tsx
+import { Dialog, DialogTrigger, Drawer } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "placement": {
+    "type": "'left' | 'right' | 'top' | 'bottom'",
+    "description": "Edge it slides from.",
+    "default": "'right'"
+  },
+  "size": {
+    "type": "'sm' | 'md' | 'lg'",
+    "description": "Width of side drawers.",
+    "default": "'md'"
+  },
+  "isDismissable": {
+    "type": "boolean",
+    "description": "Close on outside click.",
+    "default": "true"
+  }
+}} />

@@ -1,0 +1,39 @@
+---
+title: Spinner
+description: An indicator for loading states of unknown duration.
+---
+
+<ComponentPreview name="spinner" />
+
+## Import
+
+```tsx
+import { Spinner } from '@trellis-ui/react';
+```
+
+`Button` shows a spinner automatically when `isPending` is set.
+
+## Props
+
+<TypeTable type={{
+  "variant": {
+    "type": "'ring' | 'dots'",
+    "description": "Visual style.",
+    "default": "'ring'"
+  },
+  "size": {
+    "type": "'sm' | 'md' | 'lg'",
+    "description": "Size.",
+    "default": "'md'"
+  },
+  "color": {
+    "type": "'current' | 'primary' | 'neutral' | 'danger'",
+    "description": "Color. `current` inherits the text color.",
+    "default": "'current'"
+  },
+  "aria-label": {
+    "type": "string",
+    "description": "Accessible label.",
+    "default": "'Loading'"
+  }
+}} />

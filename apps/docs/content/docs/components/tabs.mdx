@@ -1,0 +1,37 @@
+---
+title: Tabs
+description: Organize content into views the user can switch between.
+---
+
+<ComponentPreview name="tabs" />
+
+## Import
+
+```tsx
+import { Tab, TabList, TabPanel, Tabs } from '@trellis-ui/react';
+```
+
+Tabs are fully keyboard accessible: arrow keys move between tabs, <kbd>Home</kbd> / <kbd>End</kbd> jump to the first and last tab.
+
+## Props
+
+### Tabs
+
+<TypeTable
+  type={{
+    selectedKey: { type: 'Key', description: 'Controlled selected tab id.' },
+    defaultSelectedKey: { type: 'Key', description: 'Initially selected tab id.' },
+    onSelectionChange: { type: '(key: Key) => void', description: 'Called when the selected tab changes.' },
+    orientation: { type: "'horizontal' | 'vertical'", description: 'Layout direction.', default: "'horizontal'" },
+    keyboardActivation: { type: "'automatic' | 'manual'", description: 'Whether focusing a tab also selects it.', default: "'automatic'" },
+  }}
+/>
+
+### TabList
+
+<TypeTable
+  type={{
+    variant: { type: "'solid' | 'underline'", description: 'Segmented control or classic tab bar.', default: "'solid'" },
+    'aria-label': { type: 'string', description: 'Accessible name of the tab list.' },
+  }}
+/>

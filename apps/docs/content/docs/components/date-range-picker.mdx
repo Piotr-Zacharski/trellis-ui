@@ -1,0 +1,61 @@
+---
+title: Date Range Picker
+description: Pick a start and end date.
+---
+
+<ComponentPreview name="date-range-picker" />
+
+## Import
+
+```tsx
+import { DateRangePicker, RangeCalendar } from '@trellis-ui/react';
+```
+
+With `FormDateRangePicker` the form value is `{ start: Date, end: Date }` – validate it with `z.object({ start: z.date(), end: z.date() })`.
+
+## With React Hook Form
+
+Use `FormDateRangePicker` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormDateRangePicker control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "value": {
+    "type": "{ start: DateValue; end: DateValue } | null",
+    "description": "Controlled range."
+  },
+  "onChange": {
+    "type": "(range) => void",
+    "description": "Called when the range changes."
+  },
+  "minValue": {
+    "type": "DateValue",
+    "description": "Earliest date."
+  },
+  "maxValue": {
+    "type": "DateValue",
+    "description": "Latest date."
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text."
+  },
+  "errorMessage": {
+    "type": "string",
+    "description": "Error shown when invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  }
+}} />

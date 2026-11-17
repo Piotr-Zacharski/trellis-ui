@@ -1,0 +1,38 @@
+---
+title: Avatar
+description: User image with initials fallback.
+---
+
+<ComponentPreview name="avatar" />
+
+## Import
+
+```tsx
+import { Avatar, AvatarGroup } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "src": {
+    "type": "string",
+    "description": "Image URL."
+  },
+  "name": {
+    "type": "string",
+    "description": "Alt text and initials source."
+  },
+  "size": {
+    "type": "'xs' | 'sm' | 'md' | 'lg'",
+    "description": "Size.",
+    "default": "'md'"
+  },
+  "status": {
+    "type": "'online' | 'away' | 'busy' | 'offline'",
+    "description": "Status dot."
+  },
+  "max": {
+    "type": "number",
+    "description": "Visible avatars (AvatarGroup)."
+  }
+}} />

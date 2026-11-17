@@ -1,0 +1,25 @@
+---
+title: Prompt Suggestions
+description: Starter prompts for an empty chat.
+---
+
+<ComponentPreview name="prompt-suggestions" />
+
+## Import
+
+```tsx
+import { PromptSuggestions } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "suggestions": {
+    "type": "(string | { label; prompt; icon? })[]",
+    "description": "Suggestions."
+  },
+  "onSelect": {
+    "type": "(prompt: string) => void",
+    "description": "Called with the prompt text."
+  }
+}} />

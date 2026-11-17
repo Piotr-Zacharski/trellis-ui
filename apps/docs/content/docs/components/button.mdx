@@ -1,0 +1,58 @@
+---
+title: Button
+description: Triggers an action. Supports variants, colors, sizes and a pending state.
+---
+
+<ComponentPreview name="button-variants" />
+
+## Import
+
+```tsx
+import { Button } from '@trellis-ui/react';
+```
+
+## Examples
+
+### Colors
+
+<ComponentPreview name="button-colors" />
+
+### Sizes
+
+<ComponentPreview name="button-sizes" />
+
+### Pending & disabled
+
+<ComponentPreview name="button-pending" />
+
+## Props
+
+<TypeTable type={{
+  "variant": {
+    "type": "'solid' | 'soft' | 'outline' | 'ghost'",
+    "description": "Visual style.",
+    "default": "'solid'"
+  },
+  "color": {
+    "type": "'primary' | 'neutral' | 'danger'",
+    "description": "Color scheme.",
+    "default": "'primary'"
+  },
+  "size": {
+    "type": "'sm' | 'md' | 'lg' | 'icon'",
+    "description": "Size.",
+    "default": "'md'"
+  },
+  "isPending": {
+    "type": "boolean",
+    "description": "Shows a spinner and blocks presses while keeping focus."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the button."
+  },
+  "onPress": {
+    "type": "(e: PressEvent) => void",
+    "description": "Called on click, tap or keyboard activation."
+  }
+}} />

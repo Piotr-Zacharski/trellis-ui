@@ -1,0 +1,36 @@
+---
+title: Link
+description: Accessible, router-aware link.
+---
+
+<ComponentPreview name="link" />
+
+## Import
+
+```tsx
+import { Link } from '@trellis-ui/react';
+```
+
+Wrap your app in React Aria's `RouterProvider` to make links use your client-side router.
+
+## Props
+
+<TypeTable type={{
+  "href": {
+    "type": "string",
+    "description": "Destination."
+  },
+  "color": {
+    "type": "'primary' | 'foreground' | 'muted'",
+    "description": "Color.",
+    "default": "'primary'"
+  },
+  "target": {
+    "type": "string",
+    "description": "Link target."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the link."
+  }
+}} />

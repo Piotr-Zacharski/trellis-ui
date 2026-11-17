@@ -1,0 +1,56 @@
+---
+title: Forms
+description: Type-safe forms with React Hook Form and Zod.
+---
+
+`@trellis-ui/form` gives you three building blocks:
+
+1. **`useZodForm(schema, options?)`** – `useForm` pre-configured with `zodResolver`. Field values are typed as `z.input<typeof schema>`,
+   and your submit handler receives the parsed `z.output<typeof schema>`.
+2. **`<Form form={form} onSubmit={...}>`** – provides form context and calls `handleSubmit` for you.
+3. **`Form*` fields** – `FormTextField`, `FormTextAreaField`, `FormNumberField`, `FormSelect`, `FormComboBox`, `FormDatePicker`,
+   `FormRadioGroup`, `FormCheckbox`, `FormSwitch` and `SubmitButton`. Each one binds value, blur, focus-on-error, `aria-invalid` and the Zod error message.
+
+```npm
+npm i @trellis-ui/form react-hook-form zod
+```
+
+## Example
+
+<ComponentPreview name="form-signup" />
+
+## Type-safe field names
+
+Pass `control={form.control}` and the `name` prop autocompletes from your schema — a typo is a compile error:
+
+```tsx
+const form = useZodForm(z.object({ email: z.email() }));
+
+<FormTextField control={form.control} name="email" label="E-mail" />; // ✅
+<FormTextField control={form.control} name="emial" label="E-mail" />; // ❌ Type error
+```
+
+Without `control`, fields read the form from the nearest `<Form>`; they still work, but `name` is a plain `string`.
+
+## Async submit
+
+`onSubmit` may return a promise. While it is pending, `SubmitButton` shows a spinner and stays focusable.
+
+## Validation timing
+
+`useZodForm` defaults to `mode: 'onTouched'`: a field is validated after its first blur, then on every change. Override it like in `useForm`:
+
+```tsx
+const form = useZodForm(schema, { mode: 'onChange', defaultValues: { email: '' } });
+```
+
+## Server errors
+
+Use React Hook Form's API directly – the fields display any error set on them:
+
+```tsx
+async function onSubmit(values: Values) {
+  const res = await api.signup(values);
+  if (res.emailTaken) form.setError('email', { message: 'This e-mail is already registered' });
+}
+```

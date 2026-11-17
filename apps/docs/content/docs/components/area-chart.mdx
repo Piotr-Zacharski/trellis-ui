@@ -1,0 +1,67 @@
+---
+title: Area Chart
+description: Volume over time.
+---
+
+<ComponentPreview name="area-chart" />
+
+## Import
+
+```tsx
+import { AreaChart } from '@trellis-ui/charts';
+```
+
+Charts live in their own package, built on [Recharts](https://recharts.org) and themed with the `--tr-chart-1…5` tokens:
+
+```npm
+npm i @trellis-ui/charts
+```
+
+Add `@import "@trellis-ui/charts/styles.css";` to your CSS.
+
+## Props
+
+<TypeTable type={{
+  "data": {
+    "type": "object[]",
+    "description": "Rows."
+  },
+  "index": {
+    "type": "string",
+    "description": "Key of the x-axis value, e.g. `month`."
+  },
+  "series": {
+    "type": "{ key; label?; color? }[]",
+    "description": "One entry per line / area / bar."
+  },
+  "height": {
+    "type": "number",
+    "description": "Height in px.",
+    "default": "280"
+  },
+  "valueFormatter": {
+    "type": "(value: number) => string",
+    "description": "Formats axis ticks and tooltip values."
+  },
+  "showGrid": {
+    "type": "boolean",
+    "description": "Grid lines.",
+    "default": "true"
+  },
+  "showLegend": {
+    "type": "boolean",
+    "description": "Legend (default when more than one series)."
+  },
+  "stacked": {
+    "type": "boolean",
+    "description": "Stack series (Area/Bar)."
+  },
+  "horizontal": {
+    "type": "boolean",
+    "description": "Horizontal bars (Bar)."
+  },
+  "aria-label": {
+    "type": "string",
+    "description": "Describe what the chart shows."
+  }
+}} />

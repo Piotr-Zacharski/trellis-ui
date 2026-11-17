@@ -1,0 +1,49 @@
+---
+title: Donut Chart
+description: Parts of a whole.
+---
+
+<ComponentPreview name="donut-chart" />
+
+## Import
+
+```tsx
+import { DonutChart } from '@trellis-ui/charts';
+```
+
+Charts live in their own package, built on [Recharts](https://recharts.org) and themed with the `--tr-chart-1…5` tokens:
+
+```npm
+npm i @trellis-ui/charts
+```
+
+Add `@import "@trellis-ui/charts/styles.css";` to your CSS.
+
+## Props
+
+<TypeTable type={{
+  "data": {
+    "type": "object[]",
+    "description": "Rows."
+  },
+  "nameKey": {
+    "type": "string",
+    "description": "Slice label key."
+  },
+  "valueKey": {
+    "type": "string",
+    "description": "Slice value key."
+  },
+  "centerLabel": {
+    "type": "ReactNode",
+    "description": "Text in the middle."
+  },
+  "centerDescription": {
+    "type": "ReactNode",
+    "description": "Small text under it."
+  },
+  "colors": {
+    "type": "string[]",
+    "description": "Slice colors."
+  }
+}} />

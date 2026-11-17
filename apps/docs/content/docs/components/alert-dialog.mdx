@@ -1,0 +1,46 @@
+---
+title: Alert Dialog
+description: Confirmation that needs a decision.
+---
+
+<ComponentPreview name="alert-dialog" />
+
+## Import
+
+```tsx
+import { AlertDialog, DialogTrigger } from '@trellis-ui/react';
+```
+
+Unlike `Dialog` it uses `role="alertdialog"`, focuses the confirm button and cannot be dismissed by clicking outside.
+
+## Props
+
+<TypeTable type={{
+  "title": {
+    "type": "ReactNode",
+    "description": "Heading."
+  },
+  "variant": {
+    "type": "'primary' | 'danger'",
+    "description": "Use danger for destructive actions.",
+    "default": "'primary'"
+  },
+  "confirmLabel": {
+    "type": "ReactNode",
+    "description": "Confirm button text.",
+    "default": "'Confirm'"
+  },
+  "cancelLabel": {
+    "type": "ReactNode",
+    "description": "Cancel button text.",
+    "default": "'Cancel'"
+  },
+  "onConfirm": {
+    "type": "() => void | Promise<void>",
+    "description": "May be async – shows a spinner until done."
+  },
+  "onCancel": {
+    "type": "() => void",
+    "description": "Called on cancel."
+  }
+}} />

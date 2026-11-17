@@ -1,0 +1,35 @@
+---
+title: Code Block
+description: Code with copy button and highlighting.
+---
+
+<ComponentPreview name="code-block" />
+
+## Import
+
+```tsx
+import { CodeBlock } from '@trellis-ui/markdown';
+```
+
+Highlighting uses [sugar-high](https://sugar-high.vercel.app) (~1 kB). Fenced code inside `<Markdown>` renders as a CodeBlock automatically.
+
+## Props
+
+<TypeTable type={{
+  "code": {
+    "type": "string",
+    "description": "Source code."
+  },
+  "language": {
+    "type": "string",
+    "description": "Language label; JS/TS-like languages are highlighted."
+  },
+  "filename": {
+    "type": "string",
+    "description": "Shown instead of the language."
+  },
+  "showLineNumbers": {
+    "type": "boolean",
+    "description": "Line numbers."
+  }
+}} />

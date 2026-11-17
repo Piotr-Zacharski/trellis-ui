@@ -1,0 +1,33 @@
+---
+title: Markdown
+description: Streaming-friendly Markdown for AI answers.
+---
+
+<ComponentPreview name="markdown" />
+
+## Import
+
+```tsx
+import { Markdown } from '@trellis-ui/markdown';
+```
+
+Lives in its own package so the core stays dependency-free:
+
+```npm
+npm i @trellis-ui/markdown
+```
+
+Add `@import "@trellis-ui/markdown/styles.css";` to your CSS. GitHub-flavoured Markdown (tables, task lists) is supported; raw HTML is ignored for safety.
+
+## Props
+
+<TypeTable type={{
+  "children": {
+    "type": "string",
+    "description": "Markdown source – partial streamed text is fine."
+  },
+  "className": {
+    "type": "string",
+    "description": "Extra classes."
+  }
+}} />

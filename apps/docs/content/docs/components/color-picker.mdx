@@ -1,0 +1,43 @@
+---
+title: Color Picker
+description: Pick a color with area, hue and hex.
+---
+
+<ComponentPreview name="color-picker" />
+
+## Import
+
+```tsx
+import { ColorPicker } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormColorPicker` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormColorPicker control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "value": {
+    "type": "string | Color",
+    "description": "Controlled color."
+  },
+  "onChange": {
+    "type": "(color: Color) => void",
+    "description": "Use `color.toString(\"hex\")` for a string."
+  },
+  "swatches": {
+    "type": "string[]",
+    "description": "Preset colors."
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Label."
+  }
+}} />

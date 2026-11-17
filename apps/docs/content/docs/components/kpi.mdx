@@ -1,0 +1,38 @@
+---
+title: KPI & Sparkline
+description: Metric cards with trend.
+---
+
+<ComponentPreview name="kpi" />
+
+## Import
+
+```tsx
+import { Kpi, TrendChip } from '@trellis-ui/react';
+import { Sparkline } from '@trellis-ui/charts';
+```
+
+## Props
+
+<TypeTable type={{
+  "title": {
+    "type": "ReactNode",
+    "description": "Metric name."
+  },
+  "value": {
+    "type": "ReactNode",
+    "description": "Formatted value."
+  },
+  "change": {
+    "type": "number",
+    "description": "Percent change → TrendChip."
+  },
+  "invertTrend": {
+    "type": "boolean",
+    "description": "Down is good (churn, latency)."
+  },
+  "chart": {
+    "type": "ReactNode",
+    "description": "e.g. a Sparkline."
+  }
+}} />

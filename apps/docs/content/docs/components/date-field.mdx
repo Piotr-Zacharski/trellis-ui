@@ -1,0 +1,53 @@
+---
+title: Date & Time Field
+description: Keyboard entry for dates and times.
+---
+
+<ComponentPreview name="date-field" />
+
+## Import
+
+```tsx
+import { DateField, TimeField } from '@trellis-ui/react';
+```
+
+`FormDateField` stores a `Date`; `FormTimeField` stores an `HH:mm` string, which pairs with `z.iso.time()`.
+
+## With React Hook Form
+
+Use `FormTimeField` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormTimeField control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "granularity": {
+    "type": "'day' | 'hour' | 'minute' | 'second'",
+    "description": "Smallest editable unit."
+  },
+  "hourCycle": {
+    "type": "12 | 24",
+    "description": "Force a 12 or 24 hour clock."
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text."
+  },
+  "errorMessage": {
+    "type": "string",
+    "description": "Error shown when invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  }
+}} />

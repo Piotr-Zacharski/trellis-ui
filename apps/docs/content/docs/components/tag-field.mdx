@@ -1,0 +1,69 @@
+---
+title: Tag Field
+description: Type to add tags; removable tag lists.
+---
+
+<ComponentPreview name="tag-field" />
+
+## Import
+
+```tsx
+import { Tag, TagField, TagGroup } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormTagField` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormTagField control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "value": {
+    "type": "string[]",
+    "description": "Controlled tags (TagField)."
+  },
+  "onChange": {
+    "type": "(tags: string[]) => void",
+    "description": "Called when tags change."
+  },
+  "maxTags": {
+    "type": "number",
+    "description": "Maximum number of tags."
+  },
+  "allowDuplicates": {
+    "type": "boolean",
+    "description": "Allow the same tag twice.",
+    "default": "false"
+  },
+  "delimiters": {
+    "type": "string[]",
+    "description": "Keys that commit a tag besides Enter.",
+    "default": "[',']"
+  },
+  "onRemove": {
+    "type": "(keys: Set<Key>) => void",
+    "description": "Makes TagGroup tags removable."
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text."
+  },
+  "errorMessage": {
+    "type": "string",
+    "description": "Error shown when invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  }
+}} />

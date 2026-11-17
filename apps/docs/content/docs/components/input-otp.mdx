@@ -1,0 +1,71 @@
+---
+title: Input OTP
+description: One-time code with separate slots.
+---
+
+<ComponentPreview name="input-otp" />
+
+## Import
+
+```tsx
+import { InputOTP } from '@trellis-ui/react';
+```
+
+A single real `<input>` sits on top of the slots, so pasting, SMS autofill (`autocomplete="one-time-code"`) and screen readers work as with any text field.
+
+## With React Hook Form
+
+Use `FormInputOTP` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormInputOTP control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "length": {
+    "type": "number",
+    "description": "Number of characters.",
+    "default": "6"
+  },
+  "type": {
+    "type": "'numeric' | 'alphanumeric'",
+    "description": "Allowed characters.",
+    "default": "'numeric'"
+  },
+  "groupSize": {
+    "type": "number",
+    "description": "Insert a separator every N slots."
+  },
+  "onComplete": {
+    "type": "(code: string) => void",
+    "description": "Called when all slots are filled."
+  },
+  "value": {
+    "type": "string",
+    "description": "Controlled value."
+  },
+  "onChange": {
+    "type": "(value: string) => void",
+    "description": "Called on every change."
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text."
+  },
+  "errorMessage": {
+    "type": "string",
+    "description": "Error shown when invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  }
+}} />

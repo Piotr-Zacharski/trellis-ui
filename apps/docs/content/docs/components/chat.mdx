@@ -1,0 +1,84 @@
+---
+title: Chat
+description: Building blocks for AI chat interfaces – a prompt box with attachments and voice recording, and message bubbles.
+---
+
+<ComponentPreview name="chat" />
+
+## Import
+
+```tsx
+import { AttachmentPreview, ChatInput, ChatMessage, useVoiceRecorder } from '@trellis-ui/react';
+```
+
+## Features
+
+- **Auto-growing textarea** – <kbd>Enter</kbd> sends, <kbd>Shift</kbd>+<kbd>Enter</kbd> adds a new line (IME composition is respected).
+- **Attachments** – the paperclip button, **drag & drop** onto the box, or **paste** a screenshot. Images get thumbnails, audio an inline player, other files a chip with name and size.
+- **Voice messages** – the mic button records with `MediaRecorder` and shows a live level meter and timer. ✓ attaches the recording, the trash icon discards it.
+- **Send / stop** – while `isPending` is true the send button turns into a stop button that calls `onStop`.
+- **Limits** – `acceptedFileTypes`, `maxAttachments` and `maxFileSize`, with an inline message when a file is rejected.
+
+## Sending to your API
+
+`onSubmit` receives the text and the `File` objects. If it returns a promise, the input is cleared once it resolves.
+
+```tsx
+<ChatInput
+  isPending={isStreaming}
+  onStop={() => abortController.abort()}
+  onSubmit={async ({ text, attachments }) => {
+    const body = new FormData();
+    body.append('text', text);
+    for (const a of attachments) body.append('files', a.file);
+    await fetch('/api/chat', { method: 'POST', body });
+  }}
+/>
+```
+
+<Callout>
+  Every attachment has a `url` (object URL) for previews. After submit the URLs belong to you – call `URL.revokeObjectURL(url)` when
+  the message is removed.
+</Callout>
+
+## Voice recording on its own
+
+`useVoiceRecorder` powers the mic button and can be used directly:
+
+```tsx
+const { status, duration, levels, start, stop, cancel } = useVoiceRecorder();
+
+const file = await stop(); // File (webm / m4a / ogg depending on the browser)
+```
+
+Recording requires a secure context (HTTPS or `localhost`) and the user's microphone permission.
+
+## ChatInput props
+
+<TypeTable
+  type={{
+    onSubmit: { type: '({ text, attachments }) => void | Promise<void>', description: 'Called on Enter or the send button.' },
+    placeholder: { type: 'string', description: 'Textarea placeholder.', default: "'Send a message…'" },
+    value: { type: 'string', description: 'Controlled text.' },
+    onChange: { type: '(value: string) => void', description: 'Called when the text changes.' },
+    acceptedFileTypes: { type: 'string[]', description: "MIME types or extensions, e.g. ['image/*', '.pdf']." },
+    allowsAttachments: { type: 'boolean', description: 'Show the attach button and enable drop / paste.', default: 'true' },
+    allowsVoice: { type: 'boolean', description: 'Show the voice recording button.', default: 'true' },
+    maxAttachments: { type: 'number', description: 'Maximum number of attachments.', default: '10' },
+    maxFileSize: { type: 'number', description: 'Max size per file in bytes.' },
+    isPending: { type: 'boolean', description: 'Assistant is responding – shows the stop button.' },
+    onStop: { type: '() => void', description: 'Called by the stop button.' },
+    isDisabled: { type: 'boolean', description: 'Disables the input.' },
+    toolbar: { type: 'ReactNode', description: 'Extra controls next to the attach button, e.g. a model Select.' },
+  }}
+/>
+
+## ChatMessage props
+
+<TypeTable
+  type={{
+    role: { type: "'user' | 'assistant'", description: 'User messages are right-aligned bubbles.' },
+    attachments: { type: 'ChatAttachment[]', description: 'Rendered above the text.' },
+    avatar: { type: 'ReactNode', description: 'Shown next to assistant messages.' },
+  }}
+/>

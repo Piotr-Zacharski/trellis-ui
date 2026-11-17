@@ -1,0 +1,29 @@
+---
+title: Chain of Thought
+description: Collapsible reasoning and shimmer text.
+---
+
+<ComponentPreview name="chain-of-thought" />
+
+## Import
+
+```tsx
+import { ChainOfThought, TextShimmer } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "isStreaming": {
+    "type": "boolean",
+    "description": "Shimmering title while thinking."
+  },
+  "title": {
+    "type": "ReactNode",
+    "description": "e.g. \"Thought for 8 seconds\"."
+  },
+  "defaultExpanded": {
+    "type": "boolean",
+    "description": "Start open."
+  }
+}} />

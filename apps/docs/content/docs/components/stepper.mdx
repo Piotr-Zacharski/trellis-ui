@@ -1,0 +1,30 @@
+---
+title: Stepper
+description: Progress through a multi-step flow.
+---
+
+<ComponentPreview name="stepper" />
+
+## Import
+
+```tsx
+import { Stepper } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "steps": {
+    "type": "{ title; description? }[]",
+    "description": "Steps."
+  },
+  "currentStep": {
+    "type": "number",
+    "description": "Active step (0-based)."
+  },
+  "orientation": {
+    "type": "'horizontal' | 'vertical'",
+    "description": "Layout.",
+    "default": "'horizontal'"
+  }
+}} />

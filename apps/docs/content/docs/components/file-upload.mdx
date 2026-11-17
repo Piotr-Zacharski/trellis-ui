@@ -1,0 +1,68 @@
+---
+title: File Upload
+description: Drag & drop area with file list.
+---
+
+<ComponentPreview name="file-upload" />
+
+## Import
+
+```tsx
+import { FileUpload } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormFileUpload` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormFileUpload control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "value": {
+    "type": "File[]",
+    "description": "Controlled files."
+  },
+  "onChange": {
+    "type": "(files: File[]) => void",
+    "description": "Called when files change."
+  },
+  "acceptedFileTypes": {
+    "type": "string[]",
+    "description": "MIME types or extensions, e.g. ['image/*', '.pdf']."
+  },
+  "allowsMultiple": {
+    "type": "boolean",
+    "description": "Allow several files.",
+    "default": "true"
+  },
+  "maxFiles": {
+    "type": "number",
+    "description": "Maximum number of files."
+  },
+  "maxFileSize": {
+    "type": "number",
+    "description": "Max size per file in bytes."
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text."
+  },
+  "errorMessage": {
+    "type": "string",
+    "description": "Error shown when invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  }
+}} />

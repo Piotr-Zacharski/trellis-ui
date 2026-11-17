@@ -1,0 +1,36 @@
+---
+title: Hover Card
+description: Rich preview on hover, e.g. profiles.
+---
+
+<ComponentPreview name="hover-card" />
+
+## Import
+
+```tsx
+import { HoverCard } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "content": {
+    "type": "ReactNode",
+    "description": "Card content."
+  },
+  "placement": {
+    "type": "Placement",
+    "description": "Position.",
+    "default": "'bottom'"
+  },
+  "openDelay": {
+    "type": "number",
+    "description": "ms before opening.",
+    "default": "300"
+  },
+  "closeDelay": {
+    "type": "number",
+    "description": "ms before closing.",
+    "default": "200"
+  }
+}} />

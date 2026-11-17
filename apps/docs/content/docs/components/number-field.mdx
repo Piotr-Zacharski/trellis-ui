@@ -1,0 +1,71 @@
+---
+title: Number Field
+description: Locale-aware numeric input with increment and decrement buttons.
+---
+
+<ComponentPreview name="number-field" />
+
+## Import
+
+```tsx
+import { NumberField } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormNumberField` from `@trellis-ui/form` – it accepts the same props, plus `name` and `control`. See [Forms](/docs/forms).
+
+```tsx
+<FormNumberField control={form.control} name="fieldName" label="Label" />
+```
+
+## Props
+
+<TypeTable type={{
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text below the field."
+  },
+  "errorMessage": {
+    "type": "string | (v: ValidationResult) => string",
+    "description": "Error shown when the field is invalid."
+  },
+  "isInvalid": {
+    "type": "boolean",
+    "description": "Marks the field as invalid."
+  },
+  "isRequired": {
+    "type": "boolean",
+    "description": "Marks the field as required."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  },
+  "minValue": {
+    "type": "number",
+    "description": "Minimum value."
+  },
+  "maxValue": {
+    "type": "number",
+    "description": "Maximum value."
+  },
+  "step": {
+    "type": "number",
+    "description": "Step for the buttons and arrow keys.",
+    "default": "1"
+  },
+  "showStepper": {
+    "type": "boolean",
+    "description": "Show increment / decrement buttons. Arrow keys work either way.",
+    "default": "false"
+  },
+  "formatOptions": {
+    "type": "Intl.NumberFormatOptions",
+    "description": "Currency, percent, units…"
+  }
+}} />

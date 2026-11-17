@@ -1,0 +1,66 @@
+---
+title: Form
+description: React Hook Form + Zod integration with fully typed fields.
+---
+
+<ComponentPreview name="form-signup" />
+
+## Import
+
+```tsx
+import {
+  Form,
+  FormCheckbox,
+  FormNumberField,
+  FormRadioGroup,
+  FormSelect,
+  FormSwitch,
+  FormTextAreaField,
+  FormTextField,
+  SubmitButton,
+  useZodForm,
+} from '@trellis-ui/form';
+```
+
+Read the [Forms guide](/docs/forms) for type-safe field names, async submit and server errors.
+
+## Dates, combobox and toasts
+
+`FormDatePicker` maps `z.date()` to a calendar, `FormComboBox` stores the selected item's id, and `toast` confirms the submit.
+
+<ComponentPreview name="form-event" />
+
+## Every field type
+
+OTP, date range, time, segmented control, slider, checkbox group, tags, color, file upload and rating – all with Zod validation.
+
+<ComponentPreview name="form-advanced" />
+
+## useZodForm
+
+<TypeTable
+  type={{
+    schema: { type: 'z.ZodType', description: 'Zod schema describing the form values.' },
+    options: { type: "Omit<UseFormProps, 'resolver'>", description: 'Any React Hook Form option, e.g. defaultValues or mode.', default: "{ mode: 'onTouched' }" },
+  }}
+/>
+
+## Form
+
+<TypeTable
+  type={{
+    form: { type: 'UseFormReturn', description: 'The object returned by useZodForm (or useForm).' },
+    onSubmit: { type: '(values: z.output<Schema>) => void | Promise<void>', description: 'Called with the parsed values when validation passes.' },
+    onInvalid: { type: '(errors: FieldErrors) => void', description: 'Called when validation fails.' },
+  }}
+/>
+
+## Form fields
+
+<TypeTable
+  type={{
+    name: { type: 'FieldPath<Values>', description: 'Path of the field in your schema. Autocompletes when control is passed.' },
+    control: { type: 'Control<Values>', description: 'form.control – enables type-safe names. Optional inside <Form>.' },
+    rules: { type: 'RegisterOptions', description: 'Extra React Hook Form rules (Zod usually covers everything).' },
+  }}
+/>

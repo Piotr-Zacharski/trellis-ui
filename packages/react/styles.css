@@ -1,0 +1,3 @@
+/* Usage (after `@import "tailwindcss";`):  @import "@trellis-ui/react/styles.css"; */
+@import "@trellis-ui/styles";
+@source "./dist";

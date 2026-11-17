@@ -1,0 +1,69 @@
+---
+title: Toast
+description: Brief, non-blocking notifications that disappear on their own.
+---
+
+<ComponentPreview name="toast" />
+
+## Setup
+
+Mount `<Toaster />` once, near the root of your app:
+
+```tsx title="app/layout.tsx"
+import { Toaster } from '@trellis-ui/react';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <Toaster />
+      </body>
+    </html>
+  );
+}
+```
+
+## Usage
+
+Call `toast` from any client code – event handlers, `onSubmit` of a form, etc.
+
+```tsx
+import { toast } from '@trellis-ui/react';
+
+toast('Event has been created');
+toast.success('Changes saved', { description: 'Your profile has been updated.' });
+toast.warning('Storage almost full');
+toast.error('Payment failed', { timeout: 0 }); // stays until closed
+
+const key = toast('Uploading…', { timeout: 0 });
+toast.dismiss(key);
+```
+
+Toasts are announced to screen readers, pause while hovered or focused, and can be reached with <kbd>F6</kbd>.
+
+<Callout type="warn">
+  Toast is built on React Aria's `UNSTABLE_Toast` API, which may still change in minor React Aria releases.
+</Callout>
+
+## API
+
+### toast(title, options?)
+
+<TypeTable
+  type={{
+    title: { type: 'ReactNode', description: 'Main message.' },
+    description: { type: 'ReactNode', description: 'Secondary text.' },
+    timeout: { type: 'number', description: 'Auto-dismiss delay in ms. 0 keeps the toast open.', default: '5000' },
+    onClose: { type: '() => void', description: 'Called when the toast closes.' },
+  }}
+/>
+
+### Toaster
+
+<TypeTable
+  type={{
+    placement: { type: "'top-start' | 'top-end' | 'bottom-start' | 'bottom-end'", description: 'Screen corner.', default: "'bottom-end'" },
+    className: { type: 'string', description: 'Extra classes for the toast region.' },
+  }}
+/>

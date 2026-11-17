@@ -1,0 +1,39 @@
+/* Usage (after @trellis-ui/react/styles.css):  @import "@trellis-ui/markdown/styles.css"; */
+@source "./dist";
+
+/* Syntax colors for sugar-high tokens. */
+.trellis-code {
+  --sh-class: oklch(0.55 0.15 250);
+  --sh-identifier: var(--tr-foreground);
+  --sh-sign: var(--tr-muted-foreground);
+  --sh-property: oklch(0.55 0.14 200);
+  --sh-entity: oklch(0.55 0.15 152);
+  --sh-jsxliterals: oklch(0.5 0.15 290);
+  --sh-string: oklch(0.55 0.13 152);
+  --sh-keyword: oklch(0.55 0.2 15);
+  --sh-comment: var(--tr-muted-foreground);
+}
+
+.dark .trellis-code {
+  --sh-class: oklch(0.78 0.12 250);
+  --sh-property: oklch(0.8 0.1 200);
+  --sh-entity: oklch(0.8 0.14 152);
+  --sh-jsxliterals: oklch(0.78 0.12 290);
+  --sh-string: oklch(0.8 0.13 152);
+  --sh-keyword: oklch(0.75 0.16 15);
+}
+
+.trellis-code-numbered code {
+  counter-reset: sh-line;
+}
+
+.trellis-code-numbered .sh__line::before {
+  counter-increment: sh-line;
+  content: counter(sh-line);
+  display: inline-block;
+  width: 2em;
+  margin-right: 1em;
+  text-align: right;
+  color: var(--tr-muted-foreground);
+  opacity: 0.6;
+}

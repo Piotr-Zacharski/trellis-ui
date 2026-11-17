@@ -1,0 +1,39 @@
+---
+title: App Layout
+description: Sidebar, navbar and content shell.
+---
+
+<ComponentPreview name="app-layout" />
+
+## Import
+
+```tsx
+import { AppLayout, Navbar, Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarItem, SidebarSection } from '@trellis-ui/react';
+```
+
+Below the `md` breakpoint the sidebar moves into a drawer opened by the hamburger button that `Navbar` renders automatically.
+
+## Props
+
+<TypeTable type={{
+  "sidebar": {
+    "type": "ReactNode",
+    "description": "Fixed column on desktop, drawer on mobile (AppLayout)."
+  },
+  "navbar": {
+    "type": "ReactNode",
+    "description": "Top bar (AppLayout)."
+  },
+  "isActive": {
+    "type": "boolean",
+    "description": "Current page (SidebarItem)."
+  },
+  "icon": {
+    "type": "ReactNode",
+    "description": "Icon (SidebarItem)."
+  },
+  "badge": {
+    "type": "ReactNode",
+    "description": "Count (SidebarItem)."
+  }
+}} />

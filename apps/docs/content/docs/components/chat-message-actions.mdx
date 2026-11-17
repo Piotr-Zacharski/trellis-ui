@@ -1,0 +1,33 @@
+---
+title: Message Actions
+description: Copy, regenerate and feedback.
+---
+
+<ComponentPreview name="chat-actions" />
+
+## Import
+
+```tsx
+import { ChatMessageActions } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "copyText": {
+    "type": "string",
+    "description": "Text for the copy button."
+  },
+  "onRegenerate": {
+    "type": "() => void",
+    "description": "Shows a regenerate button."
+  },
+  "feedback": {
+    "type": "'up' | 'down' | null",
+    "description": "Controlled feedback."
+  },
+  "onFeedback": {
+    "type": "(value) => void",
+    "description": "Shows thumbs up/down."
+  }
+}} />

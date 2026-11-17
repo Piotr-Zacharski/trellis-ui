@@ -1,0 +1,34 @@
+---
+title: Tooltip
+description: Short hint on hover or focus.
+---
+
+<ComponentPreview name="tooltip" />
+
+## Import
+
+```tsx
+import { Tooltip, TooltipTrigger } from '@trellis-ui/react';
+```
+
+Tooltips appear on hover and on keyboard focus. Keep them short and never put essential information only in a tooltip.
+
+## Props
+
+<TypeTable type={{
+  "placement": {
+    "type": "'top' | 'bottom' | 'left' | 'right'",
+    "description": "Position.",
+    "default": "'top'"
+  },
+  "delay": {
+    "type": "number",
+    "description": "Open delay in ms (TooltipTrigger).",
+    "default": "1500"
+  },
+  "showArrow": {
+    "type": "boolean",
+    "description": "Arrow.",
+    "default": "true"
+  }
+}} />

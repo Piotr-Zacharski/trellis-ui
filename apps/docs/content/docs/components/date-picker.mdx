@@ -1,0 +1,52 @@
+---
+title: Date Picker
+description: Date input with segmented keyboard entry and a calendar popover.
+---
+
+<ComponentPreview name="date-picker" />
+
+## Import
+
+```tsx
+import { Calendar, DatePicker } from '@trellis-ui/react';
+```
+
+Dates are values from [`@internationalized/date`](https://react-spectrum.adobe.com/internationalized/date/) (installed with Trellis),
+so they are timezone-safe and respect the user's locale and calendar system.
+
+```tsx
+import { getLocalTimeZone, parseDate, today } from '@internationalized/date';
+
+<DatePicker label="Start" defaultValue={parseDate('2026-11-02')} minValue={today(getLocalTimeZone())} />;
+```
+
+## Calendar
+
+The calendar used in the popover is also available on its own.
+
+<ComponentPreview name="calendar" />
+
+## With React Hook Form
+
+`FormDatePicker` from `@trellis-ui/form` works with `z.date()` – the form value is a regular JS `Date`.
+
+<ComponentPreview name="form-event" />
+
+## Props
+
+<TypeTable
+  type={{
+    label: { type: 'ReactNode', description: 'Visible label.' },
+    description: { type: 'ReactNode', description: 'Help text below the field.' },
+    errorMessage: { type: 'string | (v: ValidationResult) => string', description: 'Error shown when the field is invalid.' },
+    value: { type: 'DateValue | null', description: 'Controlled value.' },
+    defaultValue: { type: 'DateValue | null', description: 'Initial value.' },
+    onChange: { type: '(value: DateValue | null) => void', description: 'Called when the date changes.' },
+    minValue: { type: 'DateValue', description: 'Earliest selectable date.' },
+    maxValue: { type: 'DateValue', description: 'Latest selectable date.' },
+    isDateUnavailable: { type: '(date: DateValue) => boolean', description: 'Marks individual dates as unavailable.' },
+    granularity: { type: "'day' | 'hour' | 'minute' | 'second'", description: 'Smallest editable unit.', default: "'day'" },
+    isRequired: { type: 'boolean', description: 'Marks the field as required.' },
+    isDisabled: { type: 'boolean', description: 'Disables the field.' },
+  }}
+/>

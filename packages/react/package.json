@@ -1,0 +1,60 @@
+{
+  "name": "@trellis-ui/react",
+  "version": "0.1.0",
+  "description": "Accessible React components built on React Aria and Tailwind CSS v4.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./styles.css": "./styles.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "styles.css"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@internationalized/date": "^3.12.4",
+    "@trellis-ui/styles": "workspace:^",
+    "react-aria-components": "^1.22.1",
+    "tailwind-variants": "^4.0.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tsdown": "^0.23.4",
+    "typescript": "^7.0.2",
+    "unrun": "^0.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "react-aria",
+    "tailwindcss",
+    "accessibility"
+  ]
+}

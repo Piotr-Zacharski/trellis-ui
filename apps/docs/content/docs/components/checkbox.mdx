@@ -1,0 +1,49 @@
+---
+title: Checkbox
+description: Toggles a single option on or off.
+---
+
+<ComponentPreview name="checkbox" />
+
+## Import
+
+```tsx
+import { Checkbox } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormCheckbox` from `@trellis-ui/form` – it accepts the same props, plus `name` and `control`. See [Forms](/docs/forms).
+
+```tsx
+<FormCheckbox control={form.control} name="fieldName" label="Label" />
+```
+
+## Props
+
+<TypeTable type={{
+  "isSelected": {
+    "type": "boolean",
+    "description": "Controlled state."
+  },
+  "defaultSelected": {
+    "type": "boolean",
+    "description": "Initial state."
+  },
+  "isIndeterminate": {
+    "type": "boolean",
+    "description": "Shows a mixed state."
+  },
+  "isInvalid": {
+    "type": "boolean",
+    "description": "Marks as invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the checkbox."
+  },
+  "onChange": {
+    "type": "(isSelected: boolean) => void",
+    "description": "Called when toggled."
+  }
+}} />

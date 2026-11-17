@@ -1,0 +1,34 @@
+---
+title: Timeline
+description: Events in chronological order.
+---
+
+<ComponentPreview name="timeline" />
+
+## Import
+
+```tsx
+import { Timeline, TimelineItem } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "title": {
+    "type": "ReactNode",
+    "description": "Event title."
+  },
+  "time": {
+    "type": "ReactNode",
+    "description": "Date or time."
+  },
+  "icon": {
+    "type": "ReactNode",
+    "description": "Replaces the dot."
+  },
+  "color": {
+    "type": "'primary' | 'neutral' | 'danger' | 'warning'",
+    "description": "Dot color.",
+    "default": "'neutral'"
+  }
+}} />

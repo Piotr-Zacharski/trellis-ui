@@ -1,0 +1,63 @@
+---
+title: Slider
+description: Pick a value or a range by dragging.
+---
+
+<ComponentPreview name="slider" />
+
+## Import
+
+```tsx
+import { Slider } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormSlider` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormSlider control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "value": {
+    "type": "number | number[]",
+    "description": "Controlled value – an array makes it a range slider."
+  },
+  "defaultValue": {
+    "type": "number | number[]",
+    "description": "Initial value."
+  },
+  "minValue": {
+    "type": "number",
+    "description": "Minimum.",
+    "default": "0"
+  },
+  "maxValue": {
+    "type": "number",
+    "description": "Maximum.",
+    "default": "100"
+  },
+  "step": {
+    "type": "number",
+    "description": "Step.",
+    "default": "1"
+  },
+  "formatOptions": {
+    "type": "Intl.NumberFormatOptions",
+    "description": "Formatting of the value label."
+  },
+  "thumbLabels": {
+    "type": "string[]",
+    "description": "Accessible names of range thumbs."
+  },
+  "showValueLabel": {
+    "type": "boolean",
+    "description": "Show the value next to the label.",
+    "default": "true"
+  }
+}} />

@@ -1,0 +1,41 @@
+---
+title: Switch
+description: An on/off control for settings that apply immediately.
+---
+
+<ComponentPreview name="switch" />
+
+## Import
+
+```tsx
+import { Switch } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormSwitch` from `@trellis-ui/form` – it accepts the same props, plus `name` and `control`. See [Forms](/docs/forms).
+
+```tsx
+<FormSwitch control={form.control} name="fieldName" label="Label" />
+```
+
+## Props
+
+<TypeTable type={{
+  "isSelected": {
+    "type": "boolean",
+    "description": "Controlled state."
+  },
+  "defaultSelected": {
+    "type": "boolean",
+    "description": "Initial state."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the switch."
+  },
+  "onChange": {
+    "type": "(isSelected: boolean) => void",
+    "description": "Called when toggled."
+  }
+}} />

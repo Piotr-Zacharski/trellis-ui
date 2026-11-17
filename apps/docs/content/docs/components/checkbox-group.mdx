@@ -1,0 +1,60 @@
+---
+title: Checkbox Group
+description: Pick several options from a set.
+---
+
+<ComponentPreview name="checkbox-group" />
+
+## Import
+
+```tsx
+import { Checkbox, CheckboxGroup } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormCheckboxGroup` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormCheckboxGroup control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "value": {
+    "type": "string[]",
+    "description": "Controlled checked values."
+  },
+  "defaultValue": {
+    "type": "string[]",
+    "description": "Initially checked values."
+  },
+  "onChange": {
+    "type": "(value: string[]) => void",
+    "description": "Called on change."
+  },
+  "orientation": {
+    "type": "'vertical' | 'horizontal'",
+    "description": "Layout.",
+    "default": "'vertical'"
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text."
+  },
+  "errorMessage": {
+    "type": "string",
+    "description": "Error shown when invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  }
+}} />

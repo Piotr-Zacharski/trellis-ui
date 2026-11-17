@@ -1,0 +1,45 @@
+---
+title: Search Field
+description: Search input with clear button.
+---
+
+<ComponentPreview name="search-field" />
+
+## Import
+
+```tsx
+import { SearchField } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "onSubmit": {
+    "type": "(value: string) => void",
+    "description": "Called on Enter."
+  },
+  "onClear": {
+    "type": "() => void",
+    "description": "Called when cleared."
+  },
+  "placeholder": {
+    "type": "string",
+    "description": "Placeholder."
+  },
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text."
+  },
+  "errorMessage": {
+    "type": "string",
+    "description": "Error shown when invalid."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  }
+}} />

@@ -1,0 +1,67 @@
+---
+title: Installation
+description: Add Trellis to a React 19 + Tailwind CSS v4 project.
+---
+
+<Steps>
+<Step>
+
+### Install the packages
+
+```npm
+npm i @trellis-ui/react
+```
+
+Using forms? Add the form package and its peer dependencies:
+
+```npm
+npm i @trellis-ui/form react-hook-form zod
+```
+
+</Step>
+<Step>
+
+### Import the styles
+
+Trellis ships Tailwind CSS v4 sources, so your Tailwind build generates exactly the classes the components use.
+Add the imports right after Tailwind in your main CSS file:
+
+```css title="app/globals.css"
+@import "tailwindcss";
+@import "@trellis-ui/react/styles.css";
+@import "@trellis-ui/form/styles.css"; /* only if you use @trellis-ui/form */
+```
+
+</Step>
+<Step>
+
+### Use a component
+
+```tsx
+import { Button } from '@trellis-ui/react';
+
+export function App() {
+  return <Button onPress={() => alert('Hello!')}>Click me</Button>;
+}
+```
+
+</Step>
+</Steps>
+
+## Optional packages
+
+| Package | What it adds | CSS import |
+| --- | --- | --- |
+| `@trellis-ui/form` | React Hook Form + Zod fields | `@trellis-ui/form/styles.css` |
+| `@trellis-ui/markdown` | `Markdown` and `CodeBlock` for AI answers | `@trellis-ui/markdown/styles.css` |
+| `@trellis-ui/charts` | Line, area, bar and donut charts (Recharts) | `@trellis-ui/charts/styles.css` |
+
+## Requirements
+
+- React 19
+- Tailwind CSS 4
+- For forms: React Hook Form ≥ 7.55 and Zod 4
+
+## Dark mode
+
+Add the `dark` class to `<html>` (or any parent element) — all tokens switch automatically.

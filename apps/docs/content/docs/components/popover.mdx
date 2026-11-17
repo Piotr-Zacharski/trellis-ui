@@ -1,0 +1,42 @@
+---
+title: Popover
+description: A popup anchored to its trigger – for menus of settings, extra info or small forms.
+---
+
+<ComponentPreview name="popover" />
+
+## Import
+
+```tsx
+import { PopoverContent, PopoverTrigger } from '@trellis-ui/react';
+```
+
+The first child of `PopoverTrigger` is the trigger (usually a `Button`), the second is the `PopoverContent`.
+Focus moves into the popup and returns to the trigger on close; <kbd>Esc</kbd> and outside clicks close it.
+
+## Props
+
+<TypeTable type={{
+  "title": {
+    "type": "ReactNode",
+    "description": "Heading of the popup."
+  },
+  "showArrow": {
+    "type": "boolean",
+    "description": "Arrow pointing at the trigger.",
+    "default": "false"
+  },
+  "placement": {
+    "type": "'top' | 'bottom' | 'left' | 'right' | 'bottom start' | …",
+    "description": "Preferred position.",
+    "default": "'bottom'"
+  },
+  "offset": {
+    "type": "number",
+    "description": "Distance from the trigger in px."
+  },
+  "children": {
+    "type": "ReactNode | ({ close }) => ReactNode",
+    "description": "Content. Use the function form to close from inside."
+  }
+}} />

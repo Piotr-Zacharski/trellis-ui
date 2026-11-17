@@ -1,0 +1,62 @@
+---
+title: Radio Group
+description: Lets the user pick exactly one of a small set of options.
+---
+
+<ComponentPreview name="radio-group" />
+
+## Import
+
+```tsx
+import { Radio, RadioGroup } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormRadioGroup` from `@trellis-ui/form` – it accepts the same props, plus `name` and `control`. See [Forms](/docs/forms).
+
+```tsx
+<FormRadioGroup control={form.control} name="fieldName" label="Label" />
+```
+
+## Props
+
+<TypeTable type={{
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text below the field."
+  },
+  "errorMessage": {
+    "type": "string | (v: ValidationResult) => string",
+    "description": "Error shown when the field is invalid."
+  },
+  "isInvalid": {
+    "type": "boolean",
+    "description": "Marks the field as invalid."
+  },
+  "isRequired": {
+    "type": "boolean",
+    "description": "Marks the field as required."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  },
+  "orientation": {
+    "type": "'vertical' | 'horizontal'",
+    "description": "Layout direction.",
+    "default": "'vertical'"
+  },
+  "value": {
+    "type": "string | null",
+    "description": "Controlled value."
+  },
+  "onChange": {
+    "type": "(value: string) => void",
+    "description": "Called when the value changes."
+  }
+}} />

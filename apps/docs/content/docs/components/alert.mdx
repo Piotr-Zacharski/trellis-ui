@@ -1,0 +1,38 @@
+---
+title: Alert
+description: Inline status message.
+---
+
+<ComponentPreview name="alert" />
+
+## Import
+
+```tsx
+import { Alert } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "title": {
+    "type": "ReactNode",
+    "description": "Heading."
+  },
+  "color": {
+    "type": "'neutral' | 'primary' | 'success' | 'warning' | 'danger'",
+    "description": "Color.",
+    "default": "'neutral'"
+  },
+  "icon": {
+    "type": "ReactNode | null",
+    "description": "Custom icon or null to hide."
+  },
+  "actions": {
+    "type": "ReactNode",
+    "description": "Buttons under the text."
+  },
+  "onClose": {
+    "type": "() => void",
+    "description": "Shows a dismiss button."
+  }
+}} />

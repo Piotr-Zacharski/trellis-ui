@@ -1,0 +1,37 @@
+---
+title: Menu
+description: Dropdown menu with sections and submenus.
+---
+
+<ComponentPreview name="menu" />
+
+## Import
+
+```tsx
+import { Menu, MenuItem, MenuSection, MenuSeparator, MenuTrigger, SubmenuTrigger } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "onAction": {
+    "type": "(key: Key) => void",
+    "description": "Called when an item is chosen (Menu)."
+  },
+  "selectionMode": {
+    "type": "'none' | 'single' | 'multiple'",
+    "description": "Checkable items."
+  },
+  "shortcut": {
+    "type": "string",
+    "description": "Shortcut hint (MenuItem)."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Second line (MenuItem)."
+  },
+  "variant": {
+    "type": "'default' | 'danger'",
+    "description": "Item color (MenuItem)."
+  }
+}} />

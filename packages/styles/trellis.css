@@ -1,0 +1,139 @@
+/*
+ * Trellis UI – design tokens.
+ * Colors are OKLCH CSS variables exposed to Tailwind through @theme inline,
+ * so utilities like bg-primary, text-muted-foreground and border-border work out of the box.
+ * Override any --tr-* variable in your own CSS to re-theme.
+ */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --tr-background: oklch(1 0 0);
+  --tr-foreground: oklch(0.21 0.02 265);
+  --tr-surface: oklch(0.985 0.002 265);
+  --tr-muted: oklch(0.96 0.005 265);
+  --tr-muted-foreground: oklch(0.55 0.02 265);
+  --tr-border: oklch(0.91 0.006 265);
+  --tr-input: oklch(0.87 0.008 265);
+
+  --tr-primary: oklch(0.56 0.15 152);
+  --tr-primary-hover: oklch(0.5 0.14 152);
+  --tr-primary-soft: oklch(0.95 0.04 152);
+  --tr-primary-foreground: oklch(0.99 0.01 152);
+
+  --tr-danger: oklch(0.58 0.21 25);
+  --tr-danger-hover: oklch(0.52 0.2 25);
+  --tr-danger-soft: oklch(0.95 0.03 25);
+  --tr-danger-foreground: oklch(0.99 0.01 25);
+
+  --tr-warning: oklch(0.78 0.16 75);
+  --tr-warning-soft: oklch(0.96 0.05 85);
+  --tr-warning-foreground: oklch(0.3 0.06 60);
+
+  --tr-ring: oklch(0.56 0.15 152 / 0.45);
+
+  --tr-radius: 0.625rem;
+
+  --tr-chart-1: oklch(0.6 0.15 152);
+  --tr-chart-2: oklch(0.62 0.15 240);
+  --tr-chart-3: oklch(0.6 0.17 290);
+  --tr-chart-4: oklch(0.75 0.15 70);
+  --tr-chart-5: oklch(0.63 0.19 15);
+}
+
+.dark {
+  --tr-background: oklch(0.16 0.01 265);
+  --tr-foreground: oklch(0.96 0.005 265);
+  --tr-surface: oklch(0.2 0.012 265);
+  --tr-muted: oklch(0.25 0.012 265);
+  --tr-muted-foreground: oklch(0.7 0.015 265);
+  --tr-border: oklch(0.3 0.012 265);
+  --tr-input: oklch(0.36 0.014 265);
+
+  --tr-primary: oklch(0.7 0.16 152);
+  --tr-primary-hover: oklch(0.76 0.15 152);
+  --tr-primary-soft: oklch(0.3 0.06 152);
+  --tr-primary-foreground: oklch(0.18 0.03 152);
+
+  --tr-danger: oklch(0.68 0.19 25);
+  --tr-danger-hover: oklch(0.74 0.17 25);
+  --tr-danger-soft: oklch(0.3 0.07 25);
+  --tr-danger-foreground: oklch(0.16 0.03 25);
+
+  --tr-warning: oklch(0.8 0.15 80);
+  --tr-warning-soft: oklch(0.32 0.06 75);
+  --tr-warning-foreground: oklch(0.95 0.04 85);
+
+  --tr-ring: oklch(0.7 0.16 152 / 0.5);
+
+  --tr-chart-1: oklch(0.72 0.16 152);
+  --tr-chart-2: oklch(0.72 0.13 240);
+  --tr-chart-3: oklch(0.72 0.14 290);
+  --tr-chart-4: oklch(0.8 0.14 75);
+  --tr-chart-5: oklch(0.72 0.16 15);
+}
+
+@theme inline {
+  --color-background: var(--tr-background);
+  --color-foreground: var(--tr-foreground);
+  --color-surface: var(--tr-surface);
+  --color-muted: var(--tr-muted);
+  --color-muted-foreground: var(--tr-muted-foreground);
+  --color-border: var(--tr-border);
+  --color-input: var(--tr-input);
+
+  --color-primary: var(--tr-primary);
+  --color-primary-hover: var(--tr-primary-hover);
+  --color-primary-soft: var(--tr-primary-soft);
+  --color-primary-foreground: var(--tr-primary-foreground);
+
+  --color-danger: var(--tr-danger);
+  --color-danger-hover: var(--tr-danger-hover);
+  --color-danger-soft: var(--tr-danger-soft);
+  --color-danger-foreground: var(--tr-danger-foreground);
+
+  --color-warning: var(--tr-warning);
+  --color-warning-soft: var(--tr-warning-soft);
+  --color-warning-foreground: var(--tr-warning-foreground);
+
+  --color-ring: var(--tr-ring);
+
+  --radius-tr: var(--tr-radius);
+}
+
+@theme {
+  --animate-tr-indeterminate: tr-indeterminate 1.4s ease-in-out infinite;
+  --animate-tr-dot: tr-dot 1.2s ease-in-out infinite;
+  --animate-tr-shimmer: tr-shimmer 2s linear infinite;
+
+  @keyframes tr-shimmer {
+    from {
+      background-position: 100% 0;
+    }
+    to {
+      background-position: -100% 0;
+    }
+  }
+
+  @keyframes tr-indeterminate {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(250%);
+    }
+  }
+
+  @keyframes tr-dot {
+    0%,
+    80%,
+    100% {
+      opacity: 0.25;
+      transform: scale(0.75);
+    }
+    40% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

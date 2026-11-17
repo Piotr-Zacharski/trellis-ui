@@ -1,0 +1,24 @@
+import type { SVGProps } from 'react';
+
+/** Trellis mark: a garden lattice with a sprouting leaf. Same artwork as app/icon.svg. */
+export function LogoMark(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <rect width="32" height="32" rx="8" fill="#16a34a" />
+      <g stroke="#fff" strokeWidth="2.4" strokeLinecap="round">
+        <path d="M8 13.5 18.5 24M13.5 8 24 18.5" />
+        <path d="M8 18.5 18.5 8M13.5 24 24 13.5" />
+      </g>
+      <path d="M18.5 8c.3-3.6 2.6-5.4 6.4-5.3.1 3.7-2.3 5.5-6.4 5.3Z" fill="#bbf7d0" />
+    </svg>
+  );
+}
+
+export function Logo() {
+  return (
+    <span className="inline-flex items-center gap-2">
+      <LogoMark className="size-6" />
+      <span className="font-semibold tracking-tight">Trellis</span>
+    </span>
+  );
+}

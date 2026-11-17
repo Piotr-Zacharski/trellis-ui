@@ -1,0 +1,36 @@
+---
+title: Resizable Panels
+description: Draggable split panes.
+---
+
+<ComponentPreview name="resizable" />
+
+## Import
+
+```tsx
+import { ResizablePanels } from '@trellis-ui/react';
+```
+
+Dividers are keyboard accessible: focus one and use the arrow keys (<kbd>Shift</kbd> for bigger steps), <kbd>Home</kbd> and <kbd>End</kbd>.
+
+## Props
+
+<TypeTable type={{
+  "orientation": {
+    "type": "'horizontal' | 'vertical'",
+    "description": "Direction.",
+    "default": "'horizontal'"
+  },
+  "defaultSizes": {
+    "type": "number[]",
+    "description": "Sizes in percent."
+  },
+  "minSizes": {
+    "type": "number[]",
+    "description": "Minimum sizes in percent."
+  },
+  "onResize": {
+    "type": "(sizes: number[]) => void",
+    "description": "Called while resizing."
+  }
+}} />

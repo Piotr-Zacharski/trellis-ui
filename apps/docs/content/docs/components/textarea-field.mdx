@@ -1,0 +1,57 @@
+---
+title: Text Area
+description: Multi-line text input.
+---
+
+<ComponentPreview name="textarea-field" />
+
+## Import
+
+```tsx
+import { TextAreaField } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormTextAreaField` from `@trellis-ui/form` – it accepts the same props, plus `name` and `control`. See [Forms](/docs/forms).
+
+```tsx
+<FormTextAreaField control={form.control} name="fieldName" label="Label" />
+```
+
+## Props
+
+<TypeTable type={{
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text below the field."
+  },
+  "errorMessage": {
+    "type": "string | (v: ValidationResult) => string",
+    "description": "Error shown when the field is invalid."
+  },
+  "isInvalid": {
+    "type": "boolean",
+    "description": "Marks the field as invalid."
+  },
+  "isRequired": {
+    "type": "boolean",
+    "description": "Marks the field as required."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  },
+  "placeholder": {
+    "type": "string",
+    "description": "Placeholder text."
+  },
+  "rows": {
+    "type": "number",
+    "description": "Initial number of rows."
+  }
+}} />

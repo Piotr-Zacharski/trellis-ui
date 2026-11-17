@@ -1,0 +1,27 @@
+---
+title: Context Menu
+description: Menu on right click.
+---
+
+<ComponentPreview name="context-menu" />
+
+## Import
+
+```tsx
+import { ContextMenu, MenuItem } from '@trellis-ui/react';
+```
+
+Keyboard users open it with <kbd>Shift</kbd>+<kbd>F10</kbd> or the context-menu key while the area is focused.
+
+## Props
+
+<TypeTable type={{
+  "trigger": {
+    "type": "ReactNode",
+    "description": "Area that opens the menu."
+  },
+  "onAction": {
+    "type": "(key: Key) => void",
+    "description": "Called when an item is chosen."
+  }
+}} />

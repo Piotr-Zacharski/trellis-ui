@@ -1,0 +1,59 @@
+---
+title: Progress Bar
+description: Shows the progress of an operation – determinate or indeterminate.
+---
+
+<ComponentPreview name="progress-bar" />
+
+## Import
+
+```tsx
+import { ProgressBar } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "value": {
+    "type": "number",
+    "description": "Current value.",
+    "default": "0"
+  },
+  "minValue": {
+    "type": "number",
+    "description": "Minimum value.",
+    "default": "0"
+  },
+  "maxValue": {
+    "type": "number",
+    "description": "Maximum value.",
+    "default": "100"
+  },
+  "isIndeterminate": {
+    "type": "boolean",
+    "description": "Animated state for unknown duration."
+  },
+  "showValueLabel": {
+    "type": "boolean",
+    "description": "Show the formatted percentage."
+  },
+  "formatOptions": {
+    "type": "Intl.NumberFormatOptions",
+    "description": "How the value label is formatted.",
+    "default": "{ style: 'percent' }"
+  },
+  "color": {
+    "type": "'primary' | 'neutral' | 'danger' | 'warning'",
+    "description": "Fill color.",
+    "default": "'primary'"
+  },
+  "size": {
+    "type": "'sm' | 'md' | 'lg'",
+    "description": "Size.",
+    "default": "'md'"
+  }
+}} />

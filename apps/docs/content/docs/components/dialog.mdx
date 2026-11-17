@@ -1,0 +1,39 @@
+---
+title: Dialog
+description: A modal window for focused tasks and confirmations. Traps focus and closes on Escape.
+---
+
+<ComponentPreview name="dialog" />
+
+## Import
+
+```tsx
+import { Dialog, DialogFooter, DialogTrigger, Modal } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "title": {
+    "type": "ReactNode",
+    "description": "Dialog heading (Dialog)."
+  },
+  "showCloseButton": {
+    "type": "boolean",
+    "description": "Renders the × button (Dialog).",
+    "default": "true"
+  },
+  "size": {
+    "type": "'sm' | 'md' | 'lg'",
+    "description": "Width (Modal).",
+    "default": "'md'"
+  },
+  "isDismissable": {
+    "type": "boolean",
+    "description": "Close on outside click (Modal)."
+  },
+  "isOpen": {
+    "type": "boolean",
+    "description": "Controlled open state (Modal / DialogTrigger)."
+  }
+}} />

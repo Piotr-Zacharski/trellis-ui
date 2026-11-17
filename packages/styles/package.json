@@ -1,0 +1,27 @@
+{
+  "name": "@trellis-ui/styles",
+  "version": "0.1.0",
+  "description": "Design tokens and theme for Trellis UI (Tailwind CSS v4).",
+  "license": "MIT",
+  "type": "module",
+  "style": "./trellis.css",
+  "exports": {
+    ".": {
+      "style": "./trellis.css",
+      "default": "./trellis.css"
+    },
+    "./trellis.css": "./trellis.css"
+  },
+  "files": [
+    "trellis.css"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

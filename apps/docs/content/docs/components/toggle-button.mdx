@@ -1,0 +1,44 @@
+---
+title: Toggle Button
+description: On/off buttons and segmented controls.
+---
+
+<ComponentPreview name="toggle-button" />
+
+## Import
+
+```tsx
+import { ToggleButton, ToggleButtonGroup } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormToggleButtonGroup` from `@trellis-ui/form` – same props plus `name` and `control`:
+
+```tsx
+<FormToggleButtonGroup control={form.control} name="fieldName" label="Label" />
+```
+
+The [Form](/docs/components/form) page has an example with every field.
+
+## Props
+
+<TypeTable type={{
+  "selectionMode": {
+    "type": "'single' | 'multiple'",
+    "description": "Group selection mode.",
+    "default": "'single'"
+  },
+  "selectedKeys": {
+    "type": "Iterable<Key>",
+    "description": "Controlled selection (group)."
+  },
+  "onSelectionChange": {
+    "type": "(keys: Set<Key>) => void",
+    "description": "Called when selection changes."
+  },
+  "isSelected": {
+    "type": "boolean",
+    "description": "Controlled state (standalone button)."
+  }
+}} />

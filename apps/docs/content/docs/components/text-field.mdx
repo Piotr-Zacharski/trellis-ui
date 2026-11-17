@@ -1,0 +1,84 @@
+---
+title: Text Field
+description: Single-line text input with label, description and error message.
+---
+
+<ComponentPreview name="text-field" />
+
+## Input group
+
+Put icons, prefixes, units or buttons inside the field with `startContent` and `endContent`.
+
+<ComponentPreview name="input-group" />
+
+## Import
+
+```tsx
+import { TextField } from '@trellis-ui/react';
+```
+
+## With React Hook Form
+
+Use `FormTextField` from `@trellis-ui/form` – it accepts the same props, plus `name` and `control`. See [Forms](/docs/forms).
+
+```tsx
+<FormTextField control={form.control} name="fieldName" label="Label" />
+```
+
+## Props
+
+<TypeTable type={{
+  "label": {
+    "type": "ReactNode",
+    "description": "Visible label."
+  },
+  "description": {
+    "type": "ReactNode",
+    "description": "Help text below the field."
+  },
+  "errorMessage": {
+    "type": "string | (v: ValidationResult) => string",
+    "description": "Error shown when the field is invalid."
+  },
+  "isInvalid": {
+    "type": "boolean",
+    "description": "Marks the field as invalid."
+  },
+  "isRequired": {
+    "type": "boolean",
+    "description": "Marks the field as required."
+  },
+  "isDisabled": {
+    "type": "boolean",
+    "description": "Disables the field."
+  },
+  "placeholder": {
+    "type": "string",
+    "description": "Placeholder text."
+  },
+  "type": {
+    "type": "'text' | 'email' | 'password' | 'search' | 'tel' | 'url'",
+    "description": "Input type.",
+    "default": "'text'"
+  },
+  "value": {
+    "type": "string",
+    "description": "Controlled value."
+  },
+  "onChange": {
+    "type": "(value: string) => void",
+    "description": "Called when the value changes."
+  },
+  "startContent": {
+    "type": "ReactNode",
+    "description": "Content before the input (icon, prefix)."
+  },
+  "endContent": {
+    "type": "ReactNode",
+    "description": "Content after the input (unit, button, hint)."
+  },
+  "inputRef": {
+    "type": "Ref<HTMLInputElement>",
+    "description": "Ref to the underlying input."
+  }
+}} />

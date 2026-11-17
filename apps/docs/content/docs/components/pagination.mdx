@@ -1,0 +1,39 @@
+---
+title: Pagination
+description: Navigate pages of results.
+---
+
+<ComponentPreview name="pagination" />
+
+## Import
+
+```tsx
+import { Pagination } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "total": {
+    "type": "number",
+    "description": "Number of pages."
+  },
+  "page": {
+    "type": "number",
+    "description": "Controlled page (1-based)."
+  },
+  "onChange": {
+    "type": "(page: number) => void",
+    "description": "Called on page change."
+  },
+  "siblings": {
+    "type": "number",
+    "description": "Pages around the current one.",
+    "default": "1"
+  },
+  "boundaries": {
+    "type": "number",
+    "description": "Pages at both ends.",
+    "default": "1"
+  }
+}} />

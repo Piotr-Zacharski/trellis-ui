@@ -1,0 +1,61 @@
+---
+title: Progress Circle
+description: Circular progress for compact spaces.
+---
+
+<ComponentPreview name="progress-circle" />
+
+## Import
+
+```tsx
+import { ProgressCircle } from '@trellis-ui/react';
+```
+
+`showValueLabel` fits best with `size="lg"`.
+
+## Props
+
+<TypeTable type={{
+  "aria-label": {
+    "type": "string",
+    "description": "Required – the circle has no visible label."
+  },
+  "value": {
+    "type": "number",
+    "description": "Current value.",
+    "default": "0"
+  },
+  "minValue": {
+    "type": "number",
+    "description": "Minimum value.",
+    "default": "0"
+  },
+  "maxValue": {
+    "type": "number",
+    "description": "Maximum value.",
+    "default": "100"
+  },
+  "isIndeterminate": {
+    "type": "boolean",
+    "description": "Animated state for unknown duration."
+  },
+  "showValueLabel": {
+    "type": "boolean",
+    "description": "Show the formatted percentage."
+  },
+  "formatOptions": {
+    "type": "Intl.NumberFormatOptions",
+    "description": "How the value label is formatted.",
+    "default": "{ style: 'percent' }"
+  },
+  "color": {
+    "type": "'primary' | 'neutral' | 'danger' | 'warning'",
+    "description": "Fill color.",
+    "default": "'primary'"
+  },
+  "size": {
+    "type": "'sm' | 'md' | 'lg'",
+    "description": "Size.",
+    "default": "'md'"
+  }
+}} />

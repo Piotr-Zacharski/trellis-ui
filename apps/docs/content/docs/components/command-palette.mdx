@@ -1,0 +1,38 @@
+---
+title: Command Palette
+description: Search for actions with Cmd+K.
+---
+
+<ComponentPreview name="command-palette" />
+
+## Import
+
+```tsx
+import { CommandItem, CommandPalette, CommandSection } from '@trellis-ui/react';
+```
+
+## Props
+
+<TypeTable type={{
+  "isOpen": {
+    "type": "boolean",
+    "description": "Controlled open state."
+  },
+  "onOpenChange": {
+    "type": "(open: boolean) => void",
+    "description": "Called to open/close."
+  },
+  "shortcut": {
+    "type": "string | null",
+    "description": "Key used with ⌘/Ctrl to toggle.",
+    "default": "'k'"
+  },
+  "onAction": {
+    "type": "(key: Key) => void",
+    "description": "Called when a command runs."
+  },
+  "placeholder": {
+    "type": "string",
+    "description": "Search placeholder."
+  }
+}} />

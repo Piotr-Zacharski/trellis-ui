@@ -1,0 +1,20 @@
+{
+  "name": "trellis",
+  "private": true,
+  "packageManager": "pnpm@10.12.3",
+  "scripts": {
+    "build": "turbo run build",
+    "build:packages": "turbo run build --filter=./packages/*",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build:packages && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "turbo": "^2.11.10",
+    "typescript": "^7.0.2"
+  }
+}
