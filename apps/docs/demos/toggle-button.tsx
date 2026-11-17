@@ -1,6 +1,6 @@
 'use client';
 
-import { ToggleButton, ToggleButtonGroup } from '@trellis-ui/react';
+import { ToggleButton, ToggleButtonGroup } from '@trellis-ui-pack/react';
 
 export default function ToggleButtonDemo() {
   return (

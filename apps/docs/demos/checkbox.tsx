@@ -1,6 +1,6 @@
 'use client';
 
-import { Checkbox } from '@trellis-ui/react';
+import { Checkbox } from '@trellis-ui-pack/react';
 
 export default function CheckboxDemo() {
   return (

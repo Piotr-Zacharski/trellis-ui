@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from '@trellis-ui/react';
+import { Link } from '@trellis-ui-pack/react';
 
 export default function LinkDemo() {
   return (

@@ -1,5 +1,5 @@
 {
-  "name": "@trellis-ui/charts",
+  "name": "@trellis-ui-pack/charts",
   "version": "0.1.0",
   "description": "Themed Recharts wrappers for Trellis UI: line, area, bar and donut charts.",
   "license": "MIT",
@@ -34,7 +34,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@trellis-ui/react": "workspace:^",
+    "@trellis-ui-pack/react": "workspace:^",
     "recharts": "^3.10.1",
     "react-is": "^19.3.1"
   },

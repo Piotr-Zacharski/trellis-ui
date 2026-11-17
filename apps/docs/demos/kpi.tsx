@@ -1,7 +1,7 @@
 'use client';
 
-import { Sparkline } from '@trellis-ui/charts';
-import { Kpi, TrendChip } from '@trellis-ui/react';
+import { Sparkline } from '@trellis-ui-pack/charts';
+import { Kpi, TrendChip } from '@trellis-ui-pack/react';
 
 export default function KpiDemo() {
   return (

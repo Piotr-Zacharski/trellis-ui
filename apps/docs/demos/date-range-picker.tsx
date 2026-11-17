@@ -1,7 +1,7 @@
 'use client';
 
 import { getLocalTimeZone, today } from '@internationalized/date';
-import { DateRangePicker, RangeCalendar } from '@trellis-ui/react';
+import { DateRangePicker, RangeCalendar } from '@trellis-ui-pack/react';
 
 export default function DateRangePickerDemo() {
   const now = today(getLocalTimeZone());

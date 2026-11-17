@@ -1,7 +1,7 @@
 'use client';
 
-import { Markdown } from '@trellis-ui/markdown';
-import { Button } from '@trellis-ui/react';
+import { Markdown } from '@trellis-ui-pack/markdown';
+import { Button } from '@trellis-ui-pack/react';
 import { useEffect, useState } from 'react';
 
 const answer = `Here is a **Zod** schema for a signup form:

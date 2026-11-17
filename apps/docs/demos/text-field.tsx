@@ -1,6 +1,6 @@
 'use client';
 
-import { TextField } from '@trellis-ui/react';
+import { TextField } from '@trellis-ui-pack/react';
 
 export default function TextFieldDemo() {
   return (

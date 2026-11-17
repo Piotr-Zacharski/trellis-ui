@@ -14,7 +14,7 @@ const field = {
 
 // [slug, name, description, category, demos[], package, import, props?, notes?, form?]
 const C = (slug, name, description, category, demos, pkg, imp, props, notes, form) => ({ slug, name, description, category, demos, pkg, imp, props, notes, form });
-const R = (names) => `import { ${names} } from '@trellis-ui/react';`;
+const R = (names) => `import { ${names} } from '@trellis-ui-pack/react';`;
 
 const catalog = [
   // Forms
@@ -124,10 +124,10 @@ const catalog = [
   C('chat-tool', 'Tool Call', 'Status of a function / tool call.', 'AI', ['chat-tool'], 'react', R('ChatTool'),
     { name: p('string', 'Tool name.'), status: p("'running' | 'success' | 'error'", 'State.'), input: p('unknown', 'Arguments (shown as JSON).'), output: p('unknown', 'Result (shown as JSON).') }),
   C('chat-sources', 'Sources', 'Citations used by an answer.', 'AI', ['chat-sources'], 'react', R('ChatSources'), { sources: p('{ title; url }[]', 'Sources in citation order.') }),
-  C('markdown', 'Markdown', 'Streaming-friendly Markdown for AI answers.', 'AI', ['markdown'], 'markdown', "import { Markdown } from '@trellis-ui/markdown';",
+  C('markdown', 'Markdown', 'Streaming-friendly Markdown for AI answers.', 'AI', ['markdown'], 'markdown', "import { Markdown } from '@trellis-ui-pack/markdown';",
     { children: p('string', 'Markdown source – partial streamed text is fine.'), className: p('string', 'Extra classes.') },
-    'Lives in its own package so the core stays dependency-free:\n\n```npm\nnpm i @trellis-ui/markdown\n```\n\nAdd `@import "@trellis-ui/markdown/styles.css";` to your CSS. GitHub-flavoured Markdown (tables, task lists) is supported; raw HTML is ignored for safety.'),
-  C('code-block', 'Code Block', 'Code with copy button and highlighting.', 'AI', ['code-block'], 'markdown', "import { CodeBlock } from '@trellis-ui/markdown';",
+    'Lives in its own package so the core stays dependency-free:\n\n```npm\nnpm i @trellis-ui-pack/markdown\n```\n\nAdd `@import "@trellis-ui-pack/markdown/styles.css";` to your CSS. GitHub-flavoured Markdown (tables, task lists) is supported; raw HTML is ignored for safety.'),
+  C('code-block', 'Code Block', 'Code with copy button and highlighting.', 'AI', ['code-block'], 'markdown', "import { CodeBlock } from '@trellis-ui-pack/markdown';",
     { code: p('string', 'Source code.'), language: p('string', 'Language label; JS/TS-like languages are highlighted.'), filename: p('string', 'Shown instead of the language.'), showLineNumbers: p('boolean', 'Line numbers.') },
     'Highlighting uses [sugar-high](https://sugar-high.vercel.app) (~1 kB). Fenced code inside `<Markdown>` renders as a CodeBlock automatically.'),
   // Layout
@@ -139,12 +139,12 @@ const catalog = [
     { orientation: p("'horizontal' | 'vertical'", 'Direction.', "'horizontal'"), defaultSizes: p('number[]', 'Sizes in percent.'), minSizes: p('number[]', 'Minimum sizes in percent.'), onResize: p('(sizes: number[]) => void', 'Called while resizing.') },
     'Dividers are keyboard accessible: focus one and use the arrow keys (<kbd>Shift</kbd> for bigger steps), <kbd>Home</kbd> and <kbd>End</kbd>.'),
   // Charts
-  C('line-chart', 'Line Chart', 'Trends over time.', 'Charts', ['line-chart'], 'charts', "import { LineChart } from '@trellis-ui/charts';", null, 'charts'),
-  C('area-chart', 'Area Chart', 'Volume over time.', 'Charts', ['area-chart'], 'charts', "import { AreaChart } from '@trellis-ui/charts';", null, 'charts'),
-  C('bar-chart', 'Bar Chart', 'Compare categories.', 'Charts', ['bar-chart'], 'charts', "import { BarChart } from '@trellis-ui/charts';", null, 'charts'),
-  C('donut-chart', 'Donut Chart', 'Parts of a whole.', 'Charts', ['donut-chart'], 'charts', "import { DonutChart } from '@trellis-ui/charts';",
+  C('line-chart', 'Line Chart', 'Trends over time.', 'Charts', ['line-chart'], 'charts', "import { LineChart } from '@trellis-ui-pack/charts';", null, 'charts'),
+  C('area-chart', 'Area Chart', 'Volume over time.', 'Charts', ['area-chart'], 'charts', "import { AreaChart } from '@trellis-ui-pack/charts';", null, 'charts'),
+  C('bar-chart', 'Bar Chart', 'Compare categories.', 'Charts', ['bar-chart'], 'charts', "import { BarChart } from '@trellis-ui-pack/charts';", null, 'charts'),
+  C('donut-chart', 'Donut Chart', 'Parts of a whole.', 'Charts', ['donut-chart'], 'charts', "import { DonutChart } from '@trellis-ui-pack/charts';",
     { data: p('object[]', 'Rows.'), nameKey: p('string', 'Slice label key.'), valueKey: p('string', 'Slice value key.'), centerLabel: p('ReactNode', 'Text in the middle.'), centerDescription: p('ReactNode', 'Small text under it.'), colors: p('string[]', 'Slice colors.') }, 'chartsBase'),
-  C('kpi', 'KPI & Sparkline', 'Metric cards with trend.', 'Charts', ['kpi'], 'react', "import { Kpi, TrendChip } from '@trellis-ui/react';\nimport { Sparkline } from '@trellis-ui/charts';",
+  C('kpi', 'KPI & Sparkline', 'Metric cards with trend.', 'Charts', ['kpi'], 'react', "import { Kpi, TrendChip } from '@trellis-ui-pack/react';\nimport { Sparkline } from '@trellis-ui-pack/charts';",
     { title: p('ReactNode', 'Metric name.'), value: p('ReactNode', 'Formatted value.'), change: p('number', 'Percent change → TrendChip.'), invertTrend: p('boolean', 'Down is good (churn, latency).'), chart: p('ReactNode', 'e.g. a Sparkline.') }),
 ];
 
@@ -161,7 +161,7 @@ const chartProps = {
   'aria-label': p('string', 'Describe what the chart shows.'),
 };
 const chartsNote =
-  'Charts live in their own package, built on [Recharts](https://recharts.org) and themed with the `--tr-chart-1…5` tokens:\n\n```npm\nnpm i @trellis-ui/charts\n```\n\nAdd `@import "@trellis-ui/charts/styles.css";` to your CSS.';
+  'Charts live in their own package, built on [Recharts](https://recharts.org) and themed with the `--tr-chart-1…5` tokens:\n\n```npm\nnpm i @trellis-ui-pack/charts\n```\n\nAdd `@import "@trellis-ui-pack/charts/styles.css";` to your CSS.';
 
 // 1. demos/index.ts
 const demoFiles = readdirSync(join(docs, 'demos')).filter((f) => f.endsWith('.tsx')).map((f) => f.replace(/\.tsx$/, '')).sort();
@@ -208,7 +208,7 @@ for (const c of catalog) {
   const props = c.notes === 'charts' || c.notes === 'chartsBase' ? (c.props ?? chartProps) : c.props;
   const notes = c.notes === 'charts' || c.notes === 'chartsBase' ? chartsNote : c.notes;
   const form = c.form
-    ? `\n## With React Hook Form\n\nUse \`${c.form}\` from \`@trellis-ui/form\` – same props plus \`name\` and \`control\`:\n\n\`\`\`tsx\n<${c.form} control={form.control} name="fieldName" label="Label" />\n\`\`\`\n\nThe [Form](/docs/components/form) page has an example with every field.\n`
+    ? `\n## With React Hook Form\n\nUse \`${c.form}\` from \`@trellis-ui-pack/form\` – same props plus \`name\` and \`control\`:\n\n\`\`\`tsx\n<${c.form} control={form.control} name="fieldName" label="Label" />\n\`\`\`\n\nThe [Form](/docs/components/form) page has an example with every field.\n`
     : '';
   writeFileSync(
     file,

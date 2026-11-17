@@ -1,6 +1,6 @@
 'use client';
 
-import { InputOTP, toast } from '@trellis-ui/react';
+import { InputOTP, toast } from '@trellis-ui-pack/react';
 
 export default function InputOTPDemo() {
   return (

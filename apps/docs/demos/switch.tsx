@@ -1,6 +1,6 @@
 'use client';
 
-import { Switch } from '@trellis-ui/react';
+import { Switch } from '@trellis-ui-pack/react';
 
 export default function SwitchDemo() {
   return (

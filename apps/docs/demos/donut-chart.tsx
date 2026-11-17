@@ -1,6 +1,6 @@
 'use client';
 
-import { DonutChart } from '@trellis-ui/charts';
+import { DonutChart } from '@trellis-ui-pack/charts';
 
 const traffic = [
   { source: 'Search', visits: 4210 },

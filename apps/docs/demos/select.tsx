@@ -1,6 +1,6 @@
 'use client';
 
-import { Select, SelectItem } from '@trellis-ui/react';
+import { Select, SelectItem } from '@trellis-ui-pack/react';
 
 const frameworks = [
   { id: 'next', name: 'Next.js' },

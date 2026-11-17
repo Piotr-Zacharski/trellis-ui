@@ -1,6 +1,6 @@
 'use client';
 
-import { LineChart } from '@trellis-ui/charts';
+import { LineChart } from '@trellis-ui-pack/charts';
 import { monthly } from './charts-data';
 
 export default function LineChartDemo() {

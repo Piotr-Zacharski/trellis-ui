@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, EmptyState } from '@trellis-ui/react';
+import { Button, EmptyState } from '@trellis-ui-pack/react';
 
 export default function EmptyStateDemo() {
   return (

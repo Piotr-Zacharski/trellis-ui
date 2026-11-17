@@ -1,6 +1,6 @@
 'use client';
 
-import { Kbd } from '@trellis-ui/react';
+import { Kbd } from '@trellis-ui-pack/react';
 
 export default function KbdDemo() {
   return (

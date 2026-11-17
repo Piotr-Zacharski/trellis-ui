@@ -1,6 +1,6 @@
 'use client';
 
-import { ContextMenu, MenuItem, MenuSeparator, toast } from '@trellis-ui/react';
+import { ContextMenu, MenuItem, MenuSeparator, toast } from '@trellis-ui-pack/react';
 
 export default function ContextMenuDemo() {
   return (

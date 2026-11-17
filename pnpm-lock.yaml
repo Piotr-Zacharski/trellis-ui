@@ -23,16 +23,16 @@ importers:
       '@internationalized/date':
         specifier: ^3.12.4
         version: 3.12.4
-      '@trellis-ui/charts':
+      '@trellis-ui-pack/charts':
         specifier: workspace:*
         version: link:../../packages/charts
-      '@trellis-ui/form':
+      '@trellis-ui-pack/form':
         specifier: workspace:*
         version: link:../../packages/form
-      '@trellis-ui/markdown':
+      '@trellis-ui-pack/markdown':
         specifier: workspace:*
         version: link:../../packages/markdown
-      '@trellis-ui/react':
+      '@trellis-ui-pack/react':
         specifier: workspace:*
         version: link:../../packages/react
       cn:
@@ -108,7 +108,7 @@ importers:
 
   packages/charts:
     dependencies:
-      '@trellis-ui/react':
+      '@trellis-ui-pack/react':
         specifier: workspace:^
         version: link:../react
       react-is:
@@ -148,7 +148,7 @@ importers:
       '@internationalized/date':
         specifier: ^3.12.4
         version: 3.12.4
-      '@trellis-ui/react':
+      '@trellis-ui-pack/react':
         specifier: workspace:^
         version: link:../react
     devDependencies:
@@ -194,7 +194,7 @@ importers:
 
   packages/markdown:
     dependencies:
-      '@trellis-ui/react':
+      '@trellis-ui-pack/react':
         specifier: workspace:^
         version: link:../react
       react-aria-components:
@@ -237,7 +237,7 @@ importers:
       '@internationalized/date':
         specifier: ^3.12.4
         version: 3.12.4
-      '@trellis-ui/styles':
+      '@trellis-ui-pack/styles':
         specifier: workspace:^
         version: link:../styles
       react-aria-components:

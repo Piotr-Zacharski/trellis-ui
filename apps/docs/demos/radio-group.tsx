@@ -1,6 +1,6 @@
 'use client';
 
-import { Radio, RadioGroup } from '@trellis-ui/react';
+import { Radio, RadioGroup } from '@trellis-ui-pack/react';
 
 export default function RadioGroupDemo() {
   return (

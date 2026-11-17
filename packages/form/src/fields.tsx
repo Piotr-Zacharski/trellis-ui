@@ -45,7 +45,7 @@ import {
   type TextAreaFieldProps,
   TextField,
   type TextFieldProps,
-} from '@trellis-ui/react';
+} from '@trellis-ui-pack/react';
 import {
   type Control,
   type FieldPath,

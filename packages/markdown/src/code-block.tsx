@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@trellis-ui/react';
+import { cn } from '@trellis-ui-pack/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button as RACButton } from 'react-aria-components';
 import { highlight } from 'sugar-high';

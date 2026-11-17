@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { categories, componentList } from '@/lib/components';
 import { Demo } from './demo';
 
-const badge: Partial<Record<string, string>> = { form: 'RHF + Zod', markdown: '@trellis-ui/markdown', charts: '@trellis-ui/charts' };
+const badge: Partial<Record<string, string>> = { form: 'RHF + Zod', markdown: '@trellis-ui-pack/markdown', charts: '@trellis-ui-pack/charts' };
 
 /** HeroUI-style overview: components grouped by category, each card with a live, non-interactive thumbnail. */
 export function ComponentsGrid() {

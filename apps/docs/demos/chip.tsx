@@ -1,6 +1,6 @@
 'use client';
 
-import { Chip } from '@trellis-ui/react';
+import { Chip } from '@trellis-ui-pack/react';
 
 export default function ChipDemo() {
   return (

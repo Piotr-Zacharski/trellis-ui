@@ -1,6 +1,6 @@
 'use client';
 
-import { NumberField } from '@trellis-ui/react';
+import { NumberField } from '@trellis-ui-pack/react';
 
 export default function NumberFieldDemo() {
   return (

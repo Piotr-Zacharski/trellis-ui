@@ -1,6 +1,6 @@
 'use client';
 
-import { TextAreaField } from '@trellis-ui/react';
+import { TextAreaField } from '@trellis-ui-pack/react';
 
 export default function TextAreaFieldDemo() {
   return (

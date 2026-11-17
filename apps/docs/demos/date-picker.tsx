@@ -1,7 +1,7 @@
 'use client';
 
 import { getLocalTimeZone, today } from '@internationalized/date';
-import { DatePicker } from '@trellis-ui/react';
+import { DatePicker } from '@trellis-ui-pack/react';
 
 export default function DatePickerDemo() {
   return (

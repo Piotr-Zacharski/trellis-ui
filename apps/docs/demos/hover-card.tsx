@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, Button, HoverCard, Link } from '@trellis-ui/react';
+import { Avatar, Button, HoverCard, Link } from '@trellis-ui-pack/react';
 
 export default function HoverCardDemo() {
   return (

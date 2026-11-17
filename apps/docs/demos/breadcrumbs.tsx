@@ -1,6 +1,6 @@
 'use client';
 
-import { Breadcrumb, Breadcrumbs } from '@trellis-ui/react';
+import { Breadcrumb, Breadcrumbs } from '@trellis-ui-pack/react';
 
 export default function BreadcrumbsDemo() {
   return (

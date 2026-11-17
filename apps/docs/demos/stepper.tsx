@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Stepper } from '@trellis-ui/react';
+import { Button, Stepper } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 const steps = [

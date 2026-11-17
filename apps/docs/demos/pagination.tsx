@@ -1,6 +1,6 @@
 'use client';
 
-import { Pagination } from '@trellis-ui/react';
+import { Pagination } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 export default function PaginationDemo() {

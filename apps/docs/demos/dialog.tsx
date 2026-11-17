@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Dialog, DialogFooter, DialogTrigger, Modal } from '@trellis-ui/react';
+import { Button, Dialog, DialogFooter, DialogTrigger, Modal } from '@trellis-ui-pack/react';
 
 export default function DialogDemo() {
   return (

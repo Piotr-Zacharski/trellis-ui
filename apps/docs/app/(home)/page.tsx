@@ -52,7 +52,7 @@ export default function HomePage() {
             </Link>
           </div>
           <code className="w-fit rounded-lg border border-fd-border bg-fd-card px-4 py-2.5 font-mono text-sm">
-            npm i @trellis-ui/react @trellis-ui/form
+            npm i @trellis-ui-pack/react @trellis-ui-pack/form
           </code>
         </div>
         <div className="flex justify-center rounded-2xl border border-fd-border bg-background p-6 text-foreground shadow-sm md:p-8">

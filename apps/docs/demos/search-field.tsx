@@ -1,6 +1,6 @@
 'use client';
 
-import { Kbd, SearchField, toast } from '@trellis-ui/react';
+import { Kbd, SearchField, toast } from '@trellis-ui-pack/react';
 
 export default function SearchFieldDemo() {
   return (

@@ -1,19 +1,19 @@
-# @trellis-ui/charts
+# @trellis-ui-pack/charts
 
 Themed line, area, bar, donut and sparkline charts for Trellis UI.
 
 ```bash
-npm install @trellis-ui/charts @trellis-ui/react react react-dom tailwindcss
+npm install @trellis-ui-pack/charts @trellis-ui-pack/react react react-dom tailwindcss
 ```
 
 ```css
 @import "tailwindcss";
-@import "@trellis-ui/react/styles.css";
-@import "@trellis-ui/charts/styles.css";
+@import "@trellis-ui-pack/react/styles.css";
+@import "@trellis-ui-pack/charts/styles.css";
 ```
 
 ```tsx
-import { LineChart } from '@trellis-ui/charts';
+import { LineChart } from '@trellis-ui-pack/charts';
 
 const data = [{ month: 'Jan', revenue: 1200 }];
 const series = [{ key: 'revenue', label: 'Revenue' }];

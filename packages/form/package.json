@@ -1,5 +1,5 @@
 {
-  "name": "@trellis-ui/form",
+  "name": "@trellis-ui-pack/form",
   "version": "0.1.0",
   "description": "Type-safe form fields for Trellis UI – React Hook Form + Zod out of the box.",
   "license": "MIT",
@@ -37,7 +37,7 @@
   "dependencies": {
     "@hookform/resolvers": "^7.0.1",
     "@internationalized/date": "^3.12.4",
-    "@trellis-ui/react": "workspace:^"
+    "@trellis-ui-pack/react": "workspace:^"
   },
   "peerDependencies": {
     "react": "^19.0.0",

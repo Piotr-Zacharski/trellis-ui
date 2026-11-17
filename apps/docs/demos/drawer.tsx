@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Dialog, DialogTrigger, Drawer, Switch, TextField } from '@trellis-ui/react';
+import { Button, Dialog, DialogTrigger, Drawer, Switch, TextField } from '@trellis-ui-pack/react';
 
 export default function DrawerDemo() {
   return (

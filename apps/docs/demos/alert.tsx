@@ -1,6 +1,6 @@
 'use client';
 
-import { Alert, Button } from '@trellis-ui/react';
+import { Alert, Button } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 export default function AlertDemo() {

@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, CommandItem, CommandPalette, CommandSection, Kbd, toast } from '@trellis-ui/react';
+import { Button, CommandItem, CommandPalette, CommandSection, Kbd, toast } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 export default function CommandPaletteDemo() {

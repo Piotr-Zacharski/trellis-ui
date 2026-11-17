@@ -14,8 +14,8 @@ import {
   FormToggleButtonGroup,
   SubmitButton,
   useZodForm,
-} from '@trellis-ui/form';
-import { Checkbox, toast, ToggleButton } from '@trellis-ui/react';
+} from '@trellis-ui-pack/form';
+import { Checkbox, toast, ToggleButton } from '@trellis-ui-pack/react';
 import { z } from 'zod';
 
 const schema = z.object({

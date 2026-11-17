@@ -1,6 +1,6 @@
 'use client';
 
-import { type ChatAttachment, ChatInput, ChatMessage, Spinner } from '@trellis-ui/react';
+import { type ChatAttachment, ChatInput, ChatMessage, Spinner } from '@trellis-ui-pack/react';
 import { useEffect, useRef, useState } from 'react';
 
 interface Message {

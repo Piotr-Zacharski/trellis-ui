@@ -1,6 +1,6 @@
 'use client';
 
-import { FileUpload } from '@trellis-ui/react';
+import { FileUpload } from '@trellis-ui-pack/react';
 
 export default function FileUploadDemo() {
   return (

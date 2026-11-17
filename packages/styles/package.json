@@ -1,5 +1,5 @@
 {
-  "name": "@trellis-ui/styles",
+  "name": "@trellis-ui-pack/styles",
   "version": "0.1.0",
   "description": "Design tokens and theme for Trellis UI (Tailwind CSS v4).",
   "license": "MIT",

@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Chip } from '@trellis-ui/react';
+import { Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Chip } from '@trellis-ui-pack/react';
 
 export default function CardDemo() {
   return (

@@ -1,5 +1,5 @@
 {
-  "name": "@trellis-ui/react",
+  "name": "@trellis-ui-pack/react",
   "version": "0.1.0",
   "description": "Accessible React components built on React Aria and Tailwind CSS v4.",
   "license": "MIT",
@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@internationalized/date": "^3.12.4",
-    "@trellis-ui/styles": "workspace:^",
+    "@trellis-ui-pack/styles": "workspace:^",
     "react-aria-components": "^1.22.1",
     "tailwind-variants": "^4.0.1"
   },

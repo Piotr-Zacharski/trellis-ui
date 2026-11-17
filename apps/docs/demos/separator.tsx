@@ -1,6 +1,6 @@
 'use client';
 
-import { Separator } from '@trellis-ui/react';
+import { Separator } from '@trellis-ui-pack/react';
 
 export default function SeparatorDemo() {
   return (

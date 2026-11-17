@@ -1,10 +1,10 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
-@import '@trellis-ui/react/styles.css';
-@import '@trellis-ui/form/styles.css';
-@import '@trellis-ui/markdown/styles.css';
-@import '@trellis-ui/charts/styles.css';
+@import '@trellis-ui-pack/react/styles.css';
+@import '@trellis-ui-pack/form/styles.css';
+@import '@trellis-ui-pack/markdown/styles.css';
+@import '@trellis-ui-pack/charts/styles.css';
 
 /* Let the docs chrome use the Trellis brand color. */
 :root,

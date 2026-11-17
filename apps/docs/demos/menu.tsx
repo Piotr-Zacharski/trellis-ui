@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Menu, MenuItem, MenuSection, MenuSeparator, MenuTrigger, SubmenuTrigger, toast } from '@trellis-ui/react';
+import { Button, Menu, MenuItem, MenuSection, MenuSeparator, MenuTrigger, SubmenuTrigger, toast } from '@trellis-ui-pack/react';
 
 export default function MenuDemo() {
   return (

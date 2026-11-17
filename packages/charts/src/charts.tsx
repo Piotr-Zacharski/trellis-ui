@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@trellis-ui/react';
+import { cn } from '@trellis-ui-pack/react';
 import type { ReactNode } from 'react';
 import {
   Area,

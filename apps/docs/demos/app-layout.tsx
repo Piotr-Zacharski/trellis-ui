@@ -12,7 +12,7 @@ import {
   SidebarHeader,
   SidebarItem,
   SidebarSection,
-} from '@trellis-ui/react';
+} from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 const icon = (d: string) => (

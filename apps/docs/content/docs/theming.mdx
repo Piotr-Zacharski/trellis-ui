@@ -3,14 +3,14 @@ title: Theming
 description: Re-theme Trellis with CSS variables.
 ---
 
-All design tokens are CSS variables defined in `@trellis-ui/styles` and exposed to Tailwind through `@theme inline`.
+All design tokens are CSS variables defined in `@trellis-ui-pack/styles` and exposed to Tailwind through `@theme inline`.
 You can use them in your own markup too: `bg-primary`, `text-muted-foreground`, `border-border`, `rounded-tr`…
 
 Override any variable after importing the styles:
 
 ```css title="app/globals.css"
 @import "tailwindcss";
-@import "@trellis-ui/react/styles.css";
+@import "@trellis-ui-pack/react/styles.css";
 
 :root {
   --tr-primary: oklch(0.55 0.2 265);

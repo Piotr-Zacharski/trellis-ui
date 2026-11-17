@@ -1,6 +1,6 @@
 'use client';
 
-import { ProgressCircle } from '@trellis-ui/react';
+import { ProgressCircle } from '@trellis-ui-pack/react';
 import { useEffect, useState } from 'react';
 
 export default function ProgressCircleDemo() {

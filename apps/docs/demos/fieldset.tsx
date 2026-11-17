@@ -1,6 +1,6 @@
 'use client';
 
-import { Fieldset, Switch, TextField } from '@trellis-ui/react';
+import { Fieldset, Switch, TextField } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 export default function FieldsetDemo() {

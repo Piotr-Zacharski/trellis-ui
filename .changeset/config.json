@@ -2,10 +2,10 @@
   "$schema": "https://unpkg.com/@changesets/config/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [["@trellis-ui/*"]],
+  "fixed": [["@trellis-ui-pack/*"]],
   "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@trellis-ui/docs"]
+  "ignore": ["@trellis-ui-pack/docs"]
 }

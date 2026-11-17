@@ -1,6 +1,6 @@
 'use client';
 
-import { Tab, TabList, TabPanel, Tabs } from '@trellis-ui/react';
+import { Tab, TabList, TabPanel, Tabs } from '@trellis-ui-pack/react';
 
 export default function TabsDemo() {
   return (

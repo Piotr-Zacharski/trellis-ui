@@ -1,6 +1,6 @@
 'use client';
 
-import { ChainOfThought, TextShimmer } from '@trellis-ui/react';
+import { ChainOfThought, TextShimmer } from '@trellis-ui-pack/react';
 
 export default function ChainOfThoughtDemo() {
   return (

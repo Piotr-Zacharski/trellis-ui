@@ -1,6 +1,6 @@
 'use client';
 
-import { ChatSources } from '@trellis-ui/react';
+import { ChatSources } from '@trellis-ui-pack/react';
 
 export default function ChatSourcesDemo() {
   return (

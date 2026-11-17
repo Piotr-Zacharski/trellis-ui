@@ -1,6 +1,6 @@
 'use client';
 
-import { ChatTool } from '@trellis-ui/react';
+import { ChatTool } from '@trellis-ui-pack/react';
 
 export default function ChatToolDemo() {
   return (

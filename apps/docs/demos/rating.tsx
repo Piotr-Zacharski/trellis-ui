@@ -1,6 +1,6 @@
 'use client';
 
-import { Rating } from '@trellis-ui/react';
+import { Rating } from '@trellis-ui-pack/react';
 
 export default function RatingDemo() {
   return (

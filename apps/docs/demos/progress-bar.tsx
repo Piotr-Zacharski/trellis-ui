@@ -1,6 +1,6 @@
 'use client';
 
-import { ProgressBar } from '@trellis-ui/react';
+import { ProgressBar } from '@trellis-ui-pack/react';
 import { useEffect, useState } from 'react';
 
 export default function ProgressBarDemo() {

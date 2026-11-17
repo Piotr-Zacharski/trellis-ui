@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, PopoverContent, PopoverTrigger, Switch } from '@trellis-ui/react';
+import { Button, PopoverContent, PopoverTrigger, Switch } from '@trellis-ui-pack/react';
 
 export default function PopoverDemo() {
   return (

@@ -2,7 +2,7 @@ import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { z } from 'zod';
-import { ComboBoxItem } from '@trellis-ui/react';
+import { ComboBoxItem } from '@trellis-ui-pack/react';
 import {
   Form,
   FormCheckbox,
@@ -36,7 +36,7 @@ function SignupForm({ onSubmit }: { onSubmit: (data: z.output<typeof schema>) =>
 
 afterEach(cleanup);
 
-describe('@trellis-ui/form', () => {
+describe('@trellis-ui-pack/form', () => {
   it('shows Zod errors and does not submit invalid data', async () => {
     const onSubmit = vi.fn();
     render(<SignupForm onSubmit={onSubmit} />);

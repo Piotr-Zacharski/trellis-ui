@@ -1,4 +1,4 @@
-import { Checkbox, ToggleButton } from '@trellis-ui/react';
+import { Checkbox, ToggleButton } from '@trellis-ui-pack/react';
 import { cleanup, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';

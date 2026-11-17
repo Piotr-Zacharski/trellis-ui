@@ -1,6 +1,6 @@
 'use client';
 
-import { ComboBox, ComboBoxItem } from '@trellis-ui/react';
+import { ComboBox, ComboBoxItem } from '@trellis-ui-pack/react';
 
 const countries = [
   { id: 'pl', name: 'Poland' },

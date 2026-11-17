@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Tooltip, TooltipTrigger } from '@trellis-ui/react';
+import { Button, Tooltip, TooltipTrigger } from '@trellis-ui-pack/react';
 
 export default function TooltipDemo() {
   return (

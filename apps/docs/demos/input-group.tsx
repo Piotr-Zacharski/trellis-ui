@@ -1,6 +1,6 @@
 'use client';
 
-import { Kbd, TextField } from '@trellis-ui/react';
+import { Kbd, TextField } from '@trellis-ui-pack/react';
 
 export default function InputGroupDemo() {
   return (

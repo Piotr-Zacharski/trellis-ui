@@ -1,5 +1,5 @@
 {
-  "name": "@trellis-ui/docs",
+  "name": "@trellis-ui-pack/docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@internationalized/date": "^3.12.4",
-    "@trellis-ui/form": "workspace:*",
-    "@trellis-ui/react": "workspace:*",
+    "@trellis-ui-pack/form": "workspace:*",
+    "@trellis-ui-pack/react": "workspace:*",
     "cn": "^0.5.0",
     "fumadocs-core": "16.17.10",
     "fumadocs-mdx": "15.4.10",
@@ -26,8 +26,8 @@
     "react-dom": "^19.3.1",
     "react-hook-form": "^7.91.0",
     "zod": "^4.6.7",
-    "@trellis-ui/markdown": "workspace:*",
-    "@trellis-ui/charts": "workspace:*",
+    "@trellis-ui-pack/markdown": "workspace:*",
+    "@trellis-ui-pack/charts": "workspace:*",
     "react-aria-components": "^1.22.1"
   },
   "devDependencies": {

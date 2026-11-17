@@ -1,6 +1,6 @@
 'use client';
 
-import { ResizablePanels } from '@trellis-ui/react';
+import { ResizablePanels } from '@trellis-ui-pack/react';
 
 export default function ResizableDemo() {
   return (

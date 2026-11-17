@@ -8,14 +8,14 @@ description: Keyboard entry for dates and times.
 ## Import
 
 ```tsx
-import { DateField, TimeField } from '@trellis-ui/react';
+import { DateField, TimeField } from '@trellis-ui-pack/react';
 ```
 
 `FormDateField` stores a `Date`; `FormTimeField` stores an `HH:mm` string, which pairs with `z.iso.time()`.
 
 ## With React Hook Form
 
-Use `FormTimeField` from `@trellis-ui/form` – same props plus `name` and `control`:
+Use `FormTimeField` from `@trellis-ui-pack/form` – same props plus `name` and `control`:
 
 ```tsx
 <FormTimeField control={form.control} name="fieldName" label="Label" />

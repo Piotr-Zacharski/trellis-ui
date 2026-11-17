@@ -1,6 +1,6 @@
 'use client';
 
-import { Cell, Chip, Column, Row, Table, TableBody, TableHeader } from '@trellis-ui/react';
+import { Cell, Chip, Column, Row, Table, TableBody, TableHeader } from '@trellis-ui-pack/react';
 import { useMemo, useState } from 'react';
 import type { SortDescriptor } from 'react-aria-components';
 

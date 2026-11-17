@@ -1,6 +1,6 @@
 'use client';
 
-import { BarChart } from '@trellis-ui/charts';
+import { BarChart } from '@trellis-ui-pack/charts';
 import { monthly } from './charts-data';
 
 export default function BarChartDemo() {

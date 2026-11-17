@@ -8,14 +8,14 @@ description: Pick a start and end date.
 ## Import
 
 ```tsx
-import { DateRangePicker, RangeCalendar } from '@trellis-ui/react';
+import { DateRangePicker, RangeCalendar } from '@trellis-ui-pack/react';
 ```
 
 With `FormDateRangePicker` the form value is `{ start: Date, end: Date }` – validate it with `z.object({ start: z.date(), end: z.date() })`.
 
 ## With React Hook Form
 
-Use `FormDateRangePicker` from `@trellis-ui/form` – same props plus `name` and `control`:
+Use `FormDateRangePicker` from `@trellis-ui-pack/form` – same props plus `name` and `control`:
 
 ```tsx
 <FormDateRangePicker control={form.control} name="fieldName" label="Label" />

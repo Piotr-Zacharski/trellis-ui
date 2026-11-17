@@ -10,7 +10,7 @@ description: Brief, non-blocking notifications that disappear on their own.
 Mount `<Toaster />` once, near the root of your app:
 
 ```tsx title="app/layout.tsx"
-import { Toaster } from '@trellis-ui/react';
+import { Toaster } from '@trellis-ui-pack/react';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 Call `toast` from any client code – event handlers, `onSubmit` of a form, etc.
 
 ```tsx
-import { toast } from '@trellis-ui/react';
+import { toast } from '@trellis-ui-pack/react';
 
 toast('Event has been created');
 toast.success('Changes saved', { description: 'Your profile has been updated.' });

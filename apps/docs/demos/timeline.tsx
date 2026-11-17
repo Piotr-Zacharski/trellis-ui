@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, Timeline, TimelineItem } from '@trellis-ui/react';
+import { Avatar, Timeline, TimelineItem } from '@trellis-ui-pack/react';
 
 export default function TimelineDemo() {
   return (

@@ -1,6 +1,6 @@
 'use client';
 
-import { CodeBlock } from '@trellis-ui/markdown';
+import { CodeBlock } from '@trellis-ui-pack/markdown';
 
 const code = `export function Greeting({ name }: { name: string }) {
   // Say hello

@@ -1,6 +1,6 @@
 'use client';
 
-import { AreaChart } from '@trellis-ui/charts';
+import { AreaChart } from '@trellis-ui-pack/charts';
 import { monthly } from './charts-data';
 
 export default function AreaChartDemo() {

@@ -9,13 +9,13 @@ description: Add Trellis to a React 19 + Tailwind CSS v4 project.
 ### Install the packages
 
 ```npm
-npm i @trellis-ui/react
+npm i @trellis-ui-pack/react
 ```
 
 Using forms? Add the form package and its peer dependencies:
 
 ```npm
-npm i @trellis-ui/form react-hook-form zod
+npm i @trellis-ui-pack/form react-hook-form zod
 ```
 
 </Step>
@@ -28,8 +28,8 @@ Add the imports right after Tailwind in your main CSS file:
 
 ```css title="app/globals.css"
 @import "tailwindcss";
-@import "@trellis-ui/react/styles.css";
-@import "@trellis-ui/form/styles.css"; /* only if you use @trellis-ui/form */
+@import "@trellis-ui-pack/react/styles.css";
+@import "@trellis-ui-pack/form/styles.css"; /* only if you use @trellis-ui-pack/form */
 ```
 
 </Step>
@@ -38,7 +38,7 @@ Add the imports right after Tailwind in your main CSS file:
 ### Use a component
 
 ```tsx
-import { Button } from '@trellis-ui/react';
+import { Button } from '@trellis-ui-pack/react';
 
 export function App() {
   return <Button onPress={() => alert('Hello!')}>Click me</Button>;
@@ -52,9 +52,9 @@ export function App() {
 
 | Package | What it adds | CSS import |
 | --- | --- | --- |
-| `@trellis-ui/form` | React Hook Form + Zod fields | `@trellis-ui/form/styles.css` |
-| `@trellis-ui/markdown` | `Markdown` and `CodeBlock` for AI answers | `@trellis-ui/markdown/styles.css` |
-| `@trellis-ui/charts` | Line, area, bar and donut charts (Recharts) | `@trellis-ui/charts/styles.css` |
+| `@trellis-ui-pack/form` | React Hook Form + Zod fields | `@trellis-ui-pack/form/styles.css` |
+| `@trellis-ui-pack/markdown` | `Markdown` and `CodeBlock` for AI answers | `@trellis-ui-pack/markdown/styles.css` |
+| `@trellis-ui-pack/charts` | Line, area, bar and donut charts (Recharts) | `@trellis-ui-pack/charts/styles.css` |
 
 ## Requirements
 

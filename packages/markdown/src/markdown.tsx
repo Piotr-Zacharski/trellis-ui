@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@trellis-ui/react';
+import { cn } from '@trellis-ui-pack/react';
 import { memo } from 'react';
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';

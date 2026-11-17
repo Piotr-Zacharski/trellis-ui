@@ -1,14 +1,14 @@
-# @trellis-ui/styles
+# @trellis-ui-pack/styles
 
 Trellis UI design tokens and theme for Tailwind CSS v4.
 
 ```bash
-npm install @trellis-ui/styles tailwindcss
+npm install @trellis-ui-pack/styles tailwindcss
 ```
 
 ```css
 @import "tailwindcss";
-@import "@trellis-ui/styles";
+@import "@trellis-ui-pack/styles";
 ```
 
 Override the `--tr-*` CSS custom properties to customize the theme.

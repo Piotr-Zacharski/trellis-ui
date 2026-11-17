@@ -13,29 +13,29 @@
 
 | Package | Description |
 | --- | --- |
-| [`@trellis-ui/react`](./packages/react) | UI components – forms, overlays, navigation, data display, AI chat, layout |
-| [`@trellis-ui/form`](./packages/form) | `useZodForm`, `<Form>` and type-safe `Form*` fields for React Hook Form + Zod |
-| [`@trellis-ui/markdown`](./packages/markdown) | Streaming-friendly Markdown and code blocks for AI answers |
-| [`@trellis-ui/charts`](./packages/charts) | Themed line, area, bar and donut charts (Recharts) |
-| [`@trellis-ui/styles`](./packages/styles) | Design tokens for Tailwind CSS v4 (installed with `@trellis-ui/react`) |
+| [`@trellis-ui-pack/react`](./packages/react) | UI components – forms, overlays, navigation, data display, AI chat, layout |
+| [`@trellis-ui-pack/form`](./packages/form) | `useZodForm`, `<Form>` and type-safe `Form*` fields for React Hook Form + Zod |
+| [`@trellis-ui-pack/markdown`](./packages/markdown) | Streaming-friendly Markdown and code blocks for AI answers |
+| [`@trellis-ui-pack/charts`](./packages/charts) | Themed line, area, bar and donut charts (Recharts) |
+| [`@trellis-ui-pack/styles`](./packages/styles) | Design tokens for Tailwind CSS v4 (installed with `@trellis-ui-pack/react`) |
 
 ## Installation
 
 ```bash
-npm i @trellis-ui/react @trellis-ui/form react-hook-form zod
+npm i @trellis-ui-pack/react @trellis-ui-pack/form react-hook-form zod
 # or
-yarn add @trellis-ui/react @trellis-ui/form react-hook-form zod
+yarn add @trellis-ui-pack/react @trellis-ui-pack/form react-hook-form zod
 ```
 
 ```css
 /* app/globals.css */
 @import "tailwindcss";
-@import "@trellis-ui/react/styles.css";
-@import "@trellis-ui/form/styles.css";
+@import "@trellis-ui-pack/react/styles.css";
+@import "@trellis-ui-pack/form/styles.css";
 ```
 
 ```tsx
-import { Form, FormTextField, SubmitButton, useZodForm } from '@trellis-ui/form';
+import { Form, FormTextField, SubmitButton, useZodForm } from '@trellis-ui-pack/form';
 import { z } from 'zod';
 
 const schema = z.object({ email: z.email() });
@@ -60,13 +60,13 @@ This is a pnpm + Turborepo monorepo. The documentation site lives in `apps/docs`
 ```bash
 pnpm install
 pnpm build:packages               # build the libraries
-pnpm --filter @trellis-ui/docs dev  # docs on http://localhost:3000
+pnpm --filter @trellis-ui-pack/docs dev  # docs on http://localhost:3000
 pnpm test                         # unit tests + render test of every demo
 pnpm typecheck
 ```
 
 To add a component to the docs, add a demo to `apps/docs/demos`, an entry to `apps/docs/scripts/generate-catalog.mjs`
-and run `pnpm --filter @trellis-ui/docs catalog`.
+and run `pnpm --filter @trellis-ui-pack/docs catalog`.
 
 Releases are managed with [Changesets](https://github.com/changesets/changesets): run `pnpm changeset`, merge to `main`
 and the release workflow publishes to npm.
@@ -82,14 +82,14 @@ It depends on the following open-source packages, installed from npm under their
 
 | Dependency | Used by | License |
 | --- | --- | --- |
-| [react-aria-components](https://github.com/adobe/react-spectrum) | `@trellis-ui/react` | Apache-2.0 |
-| [@internationalized/date](https://github.com/adobe/react-spectrum) | `@trellis-ui/react`, `@trellis-ui/form` | Apache-2.0 |
-| [tailwind-variants](https://github.com/heroui-inc/tailwind-variants) | `@trellis-ui/react` | MIT |
-| [@hookform/resolvers](https://github.com/react-hook-form/resolvers) | `@trellis-ui/form` | MIT |
-| [react-markdown](https://github.com/remarkjs/react-markdown) | `@trellis-ui/markdown` | MIT |
-| [remark-gfm](https://github.com/remarkjs/remark-gfm) | `@trellis-ui/markdown` | MIT |
-| [sugar-high](https://github.com/huozhi/sugar-high) | `@trellis-ui/markdown` | MIT |
-| [recharts](https://github.com/recharts/recharts) | `@trellis-ui/charts` | MIT |
+| [react-aria-components](https://github.com/adobe/react-spectrum) | `@trellis-ui-pack/react` | Apache-2.0 |
+| [@internationalized/date](https://github.com/adobe/react-spectrum) | `@trellis-ui-pack/react`, `@trellis-ui-pack/form` | Apache-2.0 |
+| [tailwind-variants](https://github.com/heroui-inc/tailwind-variants) | `@trellis-ui-pack/react` | MIT |
+| [@hookform/resolvers](https://github.com/react-hook-form/resolvers) | `@trellis-ui-pack/form` | MIT |
+| [react-markdown](https://github.com/remarkjs/react-markdown) | `@trellis-ui-pack/markdown` | MIT |
+| [remark-gfm](https://github.com/remarkjs/remark-gfm) | `@trellis-ui-pack/markdown` | MIT |
+| [sugar-high](https://github.com/huozhi/sugar-high) | `@trellis-ui-pack/markdown` | MIT |
+| [recharts](https://github.com/recharts/recharts) | `@trellis-ui-pack/charts` | MIT |
 
 Peer dependencies you install yourself: [React](https://github.com/facebook/react) (MIT),
 [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) (MIT), [React Hook Form](https://github.com/react-hook-form/react-hook-form) (MIT)

@@ -1,6 +1,6 @@
 'use client';
 
-import { DateField, TimeField } from '@trellis-ui/react';
+import { DateField, TimeField } from '@trellis-ui-pack/react';
 
 export default function DateFieldDemo() {
   return (

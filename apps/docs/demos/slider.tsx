@@ -1,6 +1,6 @@
 'use client';
 
-import { Slider } from '@trellis-ui/react';
+import { Slider } from '@trellis-ui-pack/react';
 
 export default function SliderDemo() {
   return (

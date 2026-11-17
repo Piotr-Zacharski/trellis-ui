@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, toast } from '@trellis-ui/react';
+import { Button, toast } from '@trellis-ui-pack/react';
 
 // <Toaster /> is mounted once in the app's root layout.
 export default function ToastDemo() {

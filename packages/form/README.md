@@ -1,19 +1,19 @@
-# @trellis-ui/form
+# @trellis-ui-pack/form
 
 Type-safe Trellis UI form fields for React Hook Form and Zod.
 
 ```bash
-npm install @trellis-ui/form @trellis-ui/react react-hook-form zod
+npm install @trellis-ui-pack/form @trellis-ui-pack/react react-hook-form zod
 ```
 
 ```css
 @import "tailwindcss";
-@import "@trellis-ui/react/styles.css";
-@import "@trellis-ui/form/styles.css";
+@import "@trellis-ui-pack/react/styles.css";
+@import "@trellis-ui-pack/form/styles.css";
 ```
 
 ```tsx
-import { Form, FormTextField, SubmitButton, useZodForm } from '@trellis-ui/form';
+import { Form, FormTextField, SubmitButton, useZodForm } from '@trellis-ui-pack/form';
 import { z } from 'zod';
 
 const schema = z.object({ email: z.email() });

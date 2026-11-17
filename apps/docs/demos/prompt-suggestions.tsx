@@ -1,6 +1,6 @@
 'use client';
 
-import { PromptSuggestions, toast } from '@trellis-ui/react';
+import { PromptSuggestions, toast } from '@trellis-ui-pack/react';
 
 export default function PromptSuggestionsDemo() {
   return (

@@ -1,6 +1,6 @@
 'use client';
 
-import { Spinner } from '@trellis-ui/react';
+import { Spinner } from '@trellis-ui-pack/react';
 
 export default function SpinnerDemo() {
   return (

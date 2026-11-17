@@ -8,14 +8,14 @@ description: One-time code with separate slots.
 ## Import
 
 ```tsx
-import { InputOTP } from '@trellis-ui/react';
+import { InputOTP } from '@trellis-ui-pack/react';
 ```
 
 A single real `<input>` sits on top of the slots, so pasting, SMS autofill (`autocomplete="one-time-code"`) and screen readers work as with any text field.
 
 ## With React Hook Form
 
-Use `FormInputOTP` from `@trellis-ui/form` – same props plus `name` and `control`:
+Use `FormInputOTP` from `@trellis-ui-pack/form` – same props plus `name` and `control`:
 
 ```tsx
 <FormInputOTP control={form.control} name="fieldName" label="Label" />

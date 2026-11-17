@@ -1,5 +1,5 @@
 {
-  "name": "@trellis-ui/markdown",
+  "name": "@trellis-ui-pack/markdown",
   "version": "0.1.0",
   "description": "Streaming-friendly Markdown and code blocks for Trellis UI – made for AI chat answers.",
   "license": "MIT",
@@ -34,7 +34,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@trellis-ui/react": "workspace:^",
+    "@trellis-ui-pack/react": "workspace:^",
     "react-aria-components": "^1.22.1",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1",

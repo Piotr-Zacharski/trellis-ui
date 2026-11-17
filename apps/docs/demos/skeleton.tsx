@@ -1,6 +1,6 @@
 'use client';
 
-import { Skeleton } from '@trellis-ui/react';
+import { Skeleton } from '@trellis-ui-pack/react';
 
 export default function SkeletonDemo() {
   return (

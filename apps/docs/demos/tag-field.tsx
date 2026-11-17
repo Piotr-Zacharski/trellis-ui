@@ -1,6 +1,6 @@
 'use client';
 
-import { Tag, TagField, TagGroup } from '@trellis-ui/react';
+import { Tag, TagField, TagGroup } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 export default function TagFieldDemo() {

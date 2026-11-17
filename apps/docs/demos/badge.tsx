@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, Badge, Button } from '@trellis-ui/react';
+import { Avatar, Badge, Button } from '@trellis-ui-pack/react';
 
 const BellIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="size-5" aria-hidden="true">

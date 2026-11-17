@@ -1,8 +1,8 @@
 'use client';
 
 import { getLocalTimeZone, today } from '@internationalized/date';
-import { Form, FormComboBox, FormDatePicker, FormTextField, SubmitButton, useZodForm } from '@trellis-ui/form';
-import { ComboBoxItem, toast } from '@trellis-ui/react';
+import { Form, FormComboBox, FormDatePicker, FormTextField, SubmitButton, useZodForm } from '@trellis-ui-pack/form';
+import { ComboBoxItem, toast } from '@trellis-ui-pack/react';
 import { z } from 'zod';
 
 const cities = [

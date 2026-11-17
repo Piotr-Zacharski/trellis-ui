@@ -9,8 +9,8 @@ import {
   FormTextField,
   SubmitButton,
   useZodForm,
-} from '@trellis-ui/form';
-import { Radio, SelectItem } from '@trellis-ui/react';
+} from '@trellis-ui-pack/form';
+import { Radio, SelectItem } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 import { z } from 'zod';
 

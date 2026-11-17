@@ -1,4 +1,4 @@
-/* Usage (after @trellis-ui/react/styles.css):  @import "@trellis-ui/markdown/styles.css"; */
+/* Usage (after @trellis-ui-pack/react/styles.css):  @import "@trellis-ui-pack/markdown/styles.css"; */
 @source "./dist";
 
 /* Syntax colors for sugar-high tokens. */

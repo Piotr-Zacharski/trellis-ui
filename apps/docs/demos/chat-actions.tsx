@@ -1,6 +1,6 @@
 'use client';
 
-import { ChatMessageActions, toast } from '@trellis-ui/react';
+import { ChatMessageActions, toast } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 export default function ChatActionsDemo() {

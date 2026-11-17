@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, AvatarGroup } from '@trellis-ui/react';
+import { Avatar, AvatarGroup } from '@trellis-ui-pack/react';
 
 export default function AvatarDemo() {
   return (

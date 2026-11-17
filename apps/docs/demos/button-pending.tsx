@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@trellis-ui/react';
+import { Button } from '@trellis-ui-pack/react';
 import { useState } from 'react';
 
 export default function ButtonPending() {

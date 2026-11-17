@@ -1,6 +1,6 @@
 'use client';
 
-import { AlertDialog, Button, DialogTrigger, toast } from '@trellis-ui/react';
+import { AlertDialog, Button, DialogTrigger, toast } from '@trellis-ui-pack/react';
 
 export default function AlertDialogDemo() {
   return (
