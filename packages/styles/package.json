@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "Design tokens and theme for Trellis UI (Tailwind CSS v4).",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr-Zacharski/trellis-ui.git",
+    "directory": "packages/styles"
+  },
+  "homepage": "https://github.com/Piotr-Zacharski/trellis-ui#readme",
+  "bugs": "https://github.com/Piotr-Zacharski/trellis-ui/issues",
   "type": "module",
   "style": "./trellis.css",
   "exports": {

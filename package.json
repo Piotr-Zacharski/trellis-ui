@@ -5,6 +5,7 @@
   "scripts": {
     "build": "turbo run build",
     "build:packages": "turbo run build --filter=./packages/*",
+    "pack:check": "pnpm -r --filter './packages/*' exec npm pack --dry-run",
     "dev": "turbo run dev",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",

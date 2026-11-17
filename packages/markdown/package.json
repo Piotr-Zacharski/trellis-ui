@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "Streaming-friendly Markdown and code blocks for Trellis UI – made for AI chat answers.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr-Zacharski/trellis-ui.git",
+    "directory": "packages/markdown"
+  },
+  "homepage": "https://github.com/Piotr-Zacharski/trellis-ui#readme",
+  "bugs": "https://github.com/Piotr-Zacharski/trellis-ui/issues",
   "type": "module",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",

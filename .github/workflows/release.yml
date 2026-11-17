@@ -23,9 +23,13 @@ jobs:
           cache: pnpm
           registry-url: https://registry.npmjs.org
       - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm pack:check
       - uses: changesets/action@v1
         with:
-          publish: pnpm release
+          publish: pnpm exec changeset publish
           version: pnpm version-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "Type-safe form fields for Trellis UI – React Hook Form + Zod out of the box.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr-Zacharski/trellis-ui.git",
+    "directory": "packages/form"
+  },
+  "homepage": "https://github.com/Piotr-Zacharski/trellis-ui#readme",
+  "bugs": "https://github.com/Piotr-Zacharski/trellis-ui/issues",
   "type": "module",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",

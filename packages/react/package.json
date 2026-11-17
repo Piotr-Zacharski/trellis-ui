@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "Accessible React components built on React Aria and Tailwind CSS v4.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr-Zacharski/trellis-ui.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/Piotr-Zacharski/trellis-ui#readme",
+  "bugs": "https://github.com/Piotr-Zacharski/trellis-ui/issues",
   "type": "module",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",

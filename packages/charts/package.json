@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "description": "Themed Recharts wrappers for Trellis UI: line, area, bar and donut charts.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr-Zacharski/trellis-ui.git",
+    "directory": "packages/charts"
+  },
+  "homepage": "https://github.com/Piotr-Zacharski/trellis-ui#readme",
+  "bugs": "https://github.com/Piotr-Zacharski/trellis-ui/issues",
   "type": "module",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
